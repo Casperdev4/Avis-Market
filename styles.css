@@ -162,6 +162,82 @@ img {
     color: var(--primary);
 }
 
+/* Dropdown Menu */
+.nav-item {
+    position: relative;
+}
+
+.nav-item.dropdown > .nav-link {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.nav-item.dropdown > .nav-link::before {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    right: 0;
+    height: 20px;
+}
+
+.dropdown-arrow {
+    font-size: 10px;
+    transition: var(--transition);
+}
+
+.nav-item.dropdown:hover .dropdown-arrow {
+    transform: rotate(180deg);
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 200px;
+    background: var(--white);
+    border-radius: var(--radius);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    padding: 10px 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition);
+    margin-top: 15px;
+    z-index: 100;
+}
+
+.dropdown-menu::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid var(--white);
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    margin-top: 10px;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 12px 20px;
+    font-weight: 500;
+    color: var(--dark);
+    transition: var(--transition);
+}
+
+.dropdown-menu a:hover {
+    background: var(--light);
+    color: var(--primary);
+}
+
 .menu-toggle {
     display: none;
     flex-direction: column;
@@ -871,6 +947,54 @@ img {
         flex-direction: column;
         gap: 20px;
         text-align: center;
+    }
+
+    /* Dropdown mobile */
+    .nav-item.dropdown {
+        position: relative;
+    }
+
+    .dropdown-menu {
+        position: static;
+        transform: none;
+        min-width: 100%;
+        box-shadow: none;
+        background: var(--light);
+        border-radius: var(--radius);
+        margin-top: 10px;
+        padding: 10px;
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+    }
+
+    .dropdown-menu::before {
+        display: none;
+    }
+
+    .nav-item.dropdown.active .dropdown-menu {
+        max-height: 200px;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-item.dropdown:hover .dropdown-menu {
+        opacity: 0;
+        visibility: hidden;
+        max-height: 0;
+    }
+
+    .nav-item.dropdown.active:hover .dropdown-menu {
+        opacity: 1;
+        visibility: visible;
+        max-height: 200px;
+    }
+
+    .dropdown-menu a {
+        padding: 10px 15px;
+        border-radius: 8px;
     }
 
     .stats {
