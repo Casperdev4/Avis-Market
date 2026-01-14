@@ -421,9 +421,6 @@
     <script>
         document.addEventListener('DOMContentLoaded', function() {
 
-            // ==========================================
-            // Mobile Menu Toggle
-            // ==========================================
             const menuToggle = document.querySelector('.menu-toggle');
             const nav = document.querySelector('.nav');
 
@@ -433,7 +430,6 @@
                     menuToggle.classList.toggle('active');
                 });
 
-                // Close menu when clicking a link (except dropdown)
                 const navLinks = document.querySelectorAll('.nav-link:not(.nav-item.dropdown > .nav-link)');
                 navLinks.forEach(link => {
                     link.addEventListener('click', function() {
@@ -443,9 +439,6 @@
                 });
             }
 
-            // ==========================================
-            // Mobile Dropdown Toggle
-            // ==========================================
             const dropdowns = document.querySelectorAll('.nav-item.dropdown');
             dropdowns.forEach(dropdown => {
                 const dropdownLink = dropdown.querySelector('.nav-link');
@@ -457,7 +450,6 @@
                 });
             });
 
-            // Close dropdown when clicking a dropdown menu link
             const dropdownMenuLinks = document.querySelectorAll('.dropdown-menu a');
             dropdownMenuLinks.forEach(link => {
                 link.addEventListener('click', function() {
@@ -471,9 +463,6 @@
                 });
             });
 
-            // ==========================================
-            // Smooth Scroll for anchor links
-            // ==========================================
             const anchorLinks = document.querySelectorAll('a[href^="#"]');
 
             anchorLinks.forEach(link => {
@@ -494,30 +483,22 @@
                 });
             });
 
-            // ==========================================
-            // FAQ Accordion
-            // ==========================================
             const faqItems = document.querySelectorAll('.faq-item');
 
             faqItems.forEach(item => {
                 const question = item.querySelector('.faq-question');
 
                 question.addEventListener('click', function() {
-                    // Close other items
                     faqItems.forEach(otherItem => {
                         if (otherItem !== item && otherItem.classList.contains('active')) {
                             otherItem.classList.remove('active');
                         }
                     });
 
-                    // Toggle current item
                     item.classList.toggle('active');
                 });
             });
 
-            // ==========================================
-            // Active Navigation on Scroll
-            // ==========================================
             const sections = document.querySelectorAll('section[id]');
             const navLinksAll = document.querySelectorAll('.nav-link');
 
@@ -542,9 +523,6 @@
 
             window.addEventListener('scroll', updateActiveNav);
 
-            // ==========================================
-            // Header Background on Scroll
-            // ==========================================
             const header = document.querySelector('.header');
 
             function updateHeader() {
@@ -557,9 +535,6 @@
 
             window.addEventListener('scroll', updateHeader);
 
-            // ==========================================
-            // Animate Elements on Scroll
-            // ==========================================
             const animateElements = document.querySelectorAll('.stat-card, .step, .pricing-card, .testimonial-card, .blog-card, .faq-item');
 
             const observerOptions = {
@@ -583,35 +558,28 @@
                 observer.observe(element);
             });
 
-            // ==========================================
-            // Contact Form Handling
-            // ==========================================
             const contactForm = document.querySelector('.contact-form');
 
             if (contactForm) {
                 contactForm.addEventListener('submit', function(e) {
                     e.preventDefault();
 
-                    // Get form values
                     const formData = new FormData(contactForm);
                     const name = contactForm.querySelector('input[type="text"]').value;
                     const email = contactForm.querySelector('input[type="email"]').value;
                     const message = contactForm.querySelector('textarea').value;
 
-                    // Simple validation
                     if (!name || !email || !message) {
                         showNotification('Veuillez remplir tous les champs.', 'error');
                         return;
                     }
 
-                    // Email validation
                     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
                     if (!emailRegex.test(email)) {
                         showNotification('Veuillez entrer une adresse email valide.', 'error');
                         return;
                     }
 
-                    // Simulate form submission
                     const submitBtn = contactForm.querySelector('button[type="submit"]');
                     const originalText = submitBtn.textContent;
                     submitBtn.textContent = 'Envoi en cours...';
@@ -626,17 +594,12 @@
                 });
             }
 
-            // ==========================================
-            // Notification System
-            // ==========================================
             function showNotification(message, type = 'success') {
-                // Remove existing notification
                 const existingNotif = document.querySelector('.notification');
                 if (existingNotif) {
                     existingNotif.remove();
                 }
 
-                // Create notification element
                 const notification = document.createElement('div');
                 notification.className = `notification notification-${type}`;
                 notification.innerHTML = `
@@ -644,7 +607,6 @@
                     <button class="notification-close">&times;</button>
                 `;
 
-                // Add styles
                 notification.style.cssText = `
                     position: fixed;
                     bottom: 30px;
@@ -663,7 +625,6 @@
                     font-weight: 500;
                 `;
 
-                // Add animation keyframes
                 if (!document.querySelector('#notification-styles')) {
                     const style = document.createElement('style');
                     style.id = 'notification-styles';
@@ -691,14 +652,12 @@
 
                 document.body.appendChild(notification);
 
-                // Close button handler
                 const closeBtn = notification.querySelector('.notification-close');
                 closeBtn.addEventListener('click', () => {
                     notification.style.animation = 'slideOut 0.3s ease forwards';
                     setTimeout(() => notification.remove(), 300);
                 });
 
-                // Auto remove after 5 seconds
                 setTimeout(() => {
                     if (notification.parentNode) {
                         notification.style.animation = 'slideOut 0.3s ease forwards';
@@ -707,9 +666,6 @@
                 }, 5000);
             }
 
-            // ==========================================
-            // Counter Animation for Stats
-            // ==========================================
             const statNumbers = document.querySelectorAll('.stat-number');
             let animated = false;
 
@@ -737,7 +693,6 @@
                 animated = true;
             }
 
-            // Trigger counter animation when stats section is visible
             const statsSection = document.querySelector('.stats');
             if (statsSection) {
                 const statsObserver = new IntersectionObserver((entries) => {

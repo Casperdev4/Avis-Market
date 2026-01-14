@@ -274,9 +274,6 @@
     <script>
         document.addEventListener('DOMContentLoaded', function() {
 
-            // ==========================================
-            // Mobile Menu Toggle
-            // ==========================================
             const menuToggle = document.querySelector('.menu-toggle');
             const nav = document.querySelector('.nav');
 
@@ -286,7 +283,6 @@
                     menuToggle.classList.toggle('active');
                 });
 
-                // Close menu when clicking a link (except dropdown)
                 const navLinks = document.querySelectorAll('.nav-link:not(.nav-item.dropdown > .nav-link)');
                 navLinks.forEach(link => {
                     link.addEventListener('click', function() {
@@ -296,9 +292,6 @@
                 });
             }
 
-            // ==========================================
-            // Mobile Dropdown Toggle
-            // ==========================================
             const dropdowns = document.querySelectorAll('.nav-item.dropdown');
             dropdowns.forEach(dropdown => {
                 const dropdownLink = dropdown.querySelector('.nav-link');
@@ -310,7 +303,6 @@
                 });
             });
 
-            // Close dropdown when clicking a dropdown menu link
             const dropdownMenuLinks = document.querySelectorAll('.dropdown-menu a');
             dropdownMenuLinks.forEach(link => {
                 link.addEventListener('click', function() {
@@ -324,9 +316,6 @@
                 });
             });
 
-            // ==========================================
-            // Smooth Scroll for anchor links
-            // ==========================================
             const anchorLinks = document.querySelectorAll('a[href^="#"]');
 
             anchorLinks.forEach(link => {
@@ -347,30 +336,22 @@
                 });
             });
 
-            // ==========================================
-            // FAQ Accordion
-            // ==========================================
             const faqItems = document.querySelectorAll('.faq-item');
 
             faqItems.forEach(item => {
                 const question = item.querySelector('.faq-question');
 
                 question.addEventListener('click', function() {
-                    // Close other items
                     faqItems.forEach(otherItem => {
                         if (otherItem !== item && otherItem.classList.contains('active')) {
                             otherItem.classList.remove('active');
                         }
                     });
 
-                    // Toggle current item
                     item.classList.toggle('active');
                 });
             });
 
-            // ==========================================
-            // Active Navigation on Scroll
-            // ==========================================
             const sections = document.querySelectorAll('section[id]');
             const navLinksAll = document.querySelectorAll('.nav-link');
 
@@ -395,9 +376,6 @@
 
             window.addEventListener('scroll', updateActiveNav);
 
-            // ==========================================
-            // Header Background on Scroll
-            // ==========================================
             const header = document.querySelector('.header');
 
             function updateHeader() {
@@ -410,9 +388,6 @@
 
             window.addEventListener('scroll', updateHeader);
 
-            // ==========================================
-            // Animate Elements on Scroll
-            // ==========================================
             const animateElements = document.querySelectorAll('.stat-card, .step, .pricing-card, .testimonial-card, .blog-card, .faq-item');
 
             const observerOptions = {
@@ -436,9 +411,6 @@
                 observer.observe(element);
             });
 
-            // ==========================================
-            // Counter Animation for Stats
-            // ==========================================
             const statNumbers = document.querySelectorAll('.stat-number');
             let animated = false;
 
@@ -466,7 +438,6 @@
                 animated = true;
             }
 
-            // Trigger counter animation when stats section is visible
             const statsSection = document.querySelector('.stats');
             if (statsSection) {
                 const statsObserver = new IntersectionObserver((entries) => {
