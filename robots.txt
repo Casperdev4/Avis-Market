@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://review-market.fr/sitemap.xml
