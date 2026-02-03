@@ -7,7 +7,8 @@
     <title>Acheter Avis Google | Boostez votre Note Google My Business</title>
     <meta name="description" content="Achetez des avis Google positifs pour ameliorer votre reputation en ligne. Avis francais garantis, livraison progressive. Boostez votre fiche Google My Business des 79€.">
     <meta name="keywords" content="acheter avis google, achat avis google, avis google positifs, acheter des avis google, avis google my business, faux avis google, booster avis google, ameliorer note google, acheter avis google pas cher, avis google entreprise">
-    <link rel="canonical" href="https://avis-market.fr"/>
+    <link rel="canonical" href="https://avis-market.fr/"/>
+    <link rel="alternate" hreflang="fr-FR" href="https://avis-market.fr/"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -18,7 +19,6 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./logo/android-icon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="./logo/android-icon-96x96.png">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="./logo/ms-icon-32x32.png">
     <meta name="msapplication-TileImage" content="./logo/ms-icon-96x96.png">
 
     <!-- Open Graph -->
@@ -51,8 +51,7 @@
             "email": "support@avis-market.fr",
             "contactType": "customer service",
             "availableLanguage": "French"
-        },
-        "sameAs": []
+        }
     }
     </script>
     <script type="application/ld+json">
@@ -65,6 +64,11 @@
         "image": "https://avis-market.fr/logo.png",
         "description": "Achetez des avis Google pour booster votre reputation en ligne. Avis authentiques, garantie a vie, livraison progressive.",
         "email": "support@avis-market.fr",
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "FR",
+            "addressLocality": "France"
+        },
         "areaServed": {
             "@type": "Country",
             "name": "France"
@@ -83,12 +87,7 @@
         "@context": "https://schema.org",
         "@type": "WebSite",
         "name": "Avis Market",
-        "url": "https://avis-market.fr",
-        "potentialAction": {
-            "@type": "SearchAction",
-            "target": "https://avis-market.fr/?s={search_term_string}",
-            "query-input": "required name=search_term_string"
-        }
+        "url": "https://avis-market.fr"
     }
     </script>
     <script type="application/ld+json">
@@ -296,7 +295,7 @@
     <header class="header">
         <div class="container">
             <a href="https://avis-market.fr" class="logo">
-                <img src="logo.png" alt="Avis Google" title="Avis Google" class="logo-img">
+                <img src="logo.png" alt="Avis Market - Service d'avis Google" title="Avis Market" width="512" height="512" class="logo-img">
             </a>
             <nav class="nav">
                 <ul class="nav-list">
@@ -304,7 +303,7 @@
                     <li class="nav-item dropdown">
                         <a href="#" class="nav-link">Nos Offres <span class="dropdown-arrow">▼</span></a>
                         <div class="dropdown-menu">
-                            <a href="https://avis-market.fr#offres">Avis Positifs</a>
+                            <a href="https://avis-market.fr#offres-positifs">Avis Positifs</a>
                             <a href="acheter-avis-negatif-google.html#offres">Avis Négatifs</a>
                             <a href="supprimer-avis-google.html#offres">Supprimer Avis</a>
                         </div>
@@ -323,11 +322,11 @@
         <div class="container">
             <div class="hero-content">
                 <h1>Acheter des Avis Google<br><span class="highlight">Boostez votre Note Google My Business</span></h1>
-                <p class="hero-subtitle">Achetez des avis Google positifs pour ameliorer votre reputation en ligne. Attirez, rassurez et convertissez plus de clients avec des avis 5 etoiles.</p>
-                <a href="#offres" class="btn btn-primary" title="acheter des avis google">Nos Offres</a>
+                <p class="hero-subtitle">Achetez des avis Google positifs pour améliorer votre réputation en ligne. Attirez, rassurez et convertissez plus de clients avec des avis 5 étoiles.</p>
+                <a href="#offres-positifs" class="btn btn-primary" title="acheter des avis google">Nos Offres</a>
             </div>
             <div class="hero-image">
-                <img src="image-hero.png" alt="acheter avis google" title="acheter avis google" class="hero-img" loading="eager">
+                <img src="image-hero.png" alt="Interface de gestion des avis Google My Business" title="Acheter avis Google" width="964" height="421" class="hero-img" loading="eager">
             </div>
         </div>
     </section>
@@ -335,19 +334,19 @@
     <section class="stats">
         <div class="container">
             <div class="stat-card">
-                <div class="stat-number">89%</div>
+                <div class="stat-number" data-target="89" data-suffix="%">89%</div>
                 <p>font confiance aux avis</p>
             </div>
             <div class="stat-card">
-                <div class="stat-number">75%</div>
+                <div class="stat-number" data-target="75" data-suffix="%">75%</div>
                 <p>choisissent une entreprise grâce aux avis positifs</p>
             </div>
             <div class="stat-card">
-                <div class="stat-number">75%</div>
+                <div class="stat-number" data-target="75" data-suffix="%">75%</div>
                 <p>exigent au moins 4 étoiles</p>
             </div>
             <div class="stat-card">
-                <div class="stat-number">+5 à 9%</div>
+                <div class="stat-number" data-target="0" data-static="+5 à 9%">+5 à 9%</div>
                 <p>de chiffre d'affaires</p>
             </div>
         </div>
@@ -356,13 +355,13 @@
     <section class="credibility">
         <div class="container">
             <div class="credibility-image">
-                <img src="img-left-1-1.webp" alt="acheter avis google" title="acheter avis google" class="credibility-img" loading="lazy">
+                <img src="img-left-1-1.webp" alt="Tableau de bord avec statistiques d'avis Google" title="Pourquoi acheter des avis Google" width="601" height="791" class="credibility-img" loading="lazy">
             </div>
             <div class="credibility-content">
                 <h2>Pourquoi acheter des avis Google pour votre entreprise ?</h2>
-                <p>La credibilite sur Google Maps est cruciale pour attirer les clients vers votre etablissement local. Selon une etude de BrightLocal et Territory Influence, <strong>83% des utilisateurs</strong> se fient aux avis Google pour choisir un lieu.</p>
-                <p>Acheter des avis Google positifs permet d'<strong>ameliorer votre note Google</strong>, de renforcer votre e-reputation et d'augmenter votre visibilite sur Google My Business. Les avis clients jouent un role majeur dans les decisions d'achat.</p>
-                <a href="#offres" class="btn btn-primary">Acheter Maintenant</a>
+                <p>La crédibilité sur Google Maps est cruciale pour attirer les clients vers votre établissement local. Selon une étude de BrightLocal et Territory Influence, <strong>83% des utilisateurs</strong> se fient aux avis Google pour choisir un lieu.</p>
+                <p>Acheter des avis Google positifs permet d'<strong>améliorer votre note Google</strong>, de renforcer votre e-réputation et d'augmenter votre visibilité sur Google My Business. Les avis clients jouent un rôle majeur dans les décisions d'achat.</p>
+                <a href="#offres-positifs" class="btn btn-primary">Acheter Maintenant</a>
             </div>
         </div>
     </section>
@@ -371,12 +370,12 @@
         <div class="container">
             <div class="credibility-content">
                 <h2>Comment les avis Google boostent votre fiche Google My Business</h2>
-                <p><strong>89% des consommateurs</strong> accordent autant de confiance aux avis en ligne qu'aux recommandations personnelles. Les avis Google sont devenus essentiels pour le referencement local (SEO local) et permettent a votre entreprise d'apparaitre dans le pack local de Google.</p>
-                <p>Plus vous avez d'avis positifs, mieux vous serez positionne dans les resultats de recherche Google Maps.</p>
-                <a href="#offres" class="btn btn-primary" title="acheter faux avis google">Acheter Maintenant</a>
+                <p><strong>89% des consommateurs</strong> accordent autant de confiance aux avis en ligne qu'aux recommandations personnelles. Les avis Google sont devenus essentiels pour le référencement local (SEO local) et permettent à votre entreprise d'apparaître dans le pack local de Google.</p>
+                <p>Plus vous avez d'avis positifs, mieux vous serez positionné dans les résultats de recherche Google Maps.</p>
+                <a href="#offres-positifs" class="btn btn-primary" title="acheter faux avis google">Acheter Maintenant</a>
             </div>
             <div class="credibility-image">
-                <img src="style2.webp" alt="acheter faux avis google" title="acheter faux avis google" class="credibility-img" loading="lazy">
+                <img src="style2.webp" alt="Exemple de fiche Google My Business avec avis positifs" title="Booster sa fiche Google avec des avis" width="900" height="600" class="credibility-img" loading="lazy">
             </div>
         </div>
     </section>
@@ -410,10 +409,10 @@
         </div>
     </section>
 
-    <section id="offres" class="pricing">
+    <section id="offres-positifs" class="pricing">
         <div class="container">
             <h2 class="section-title">Acheter des Avis Google Positifs - Nos Offres</h2>
-            <p class="section-subtitle">Choisissez le pack d'avis Google adapte a vos besoins. Livraison progressive, comptes francais verifies.</p>
+            <p class="section-subtitle">Choisissez le pack d'avis Google adapté à vos besoins. Livraison progressive, comptes français vérifiés.</p>
             <div class="pricing-cards">
                 <div class="pricing-card">
                     <div class="pricing-header">
@@ -433,7 +432,7 @@
                         <li><span class="check">✓</span> Rythme 1 à 2 avis/jrs</li>
                         <li><span class="check">✓</span> Service Client 24/7</li>
                     </ul>
-                    <a href="https://buy.stripe.com/dRmfZg1Xt2j63T44ZFabK00" class="btn btn-outline" target="_blank">Commander</a>
+                    <a href="https://buy.stripe.com/dRmfZg1Xt2j63T44ZFabK00" class="btn btn-outline" target="_blank" rel="noopener noreferrer">Commander</a>
                 </div>
 
                 <div class="pricing-card featured">
@@ -455,7 +454,7 @@
                         <li><span class="check">✓</span> Rythme 1 à 2 avis/jrs</li>
                         <li><span class="check">✓</span> Service Client 24/7</li>
                     </ul>
-                    <a href="https://buy.stripe.com/28E9AS0Tp6zmfBM77NabK01" class="btn btn-primary" title="acheter avis google pas cher" target="_blank">Commander</a>
+                    <a href="https://buy.stripe.com/28E9AS0Tp6zmfBM77NabK01" class="btn btn-primary" title="acheter avis google pas cher" target="_blank" rel="noopener noreferrer">Commander</a>
                 </div>
 
                 <div class="pricing-card">
@@ -476,16 +475,16 @@
                         <li><span class="check">✓</span> Rythme 1 à 2 avis/jrs</li>
                         <li><span class="check">✓</span> Service Client 24/7</li>
                     </ul>
-                    <a href="https://buy.stripe.com/5kQ00i45B5viexIcs7abK02" title="avis google achat" class="btn btn-outline" target="_blank">Commander</a>
+                    <a href="https://buy.stripe.com/5kQ00i45B5viexIcs7abK02" title="avis google achat" class="btn btn-outline" target="_blank" rel="noopener noreferrer">Commander</a>
                 </div>
             </div>
         </div>
     </section>
 
-        <section id="offres" class="pricing">
+        <section id="offres-negatifs" class="pricing">
         <div class="container">
-            <h2 class="section-title">Nos Offres Avis Negatifs</h2>
-            <p class="section-subtitle">Choisissez le pack adapte a vos besoins</p>
+            <h2 class="section-title">Nos Offres Avis Négatifs</h2>
+            <p class="section-subtitle">Choisissez le pack adapté à vos besoins</p>
             <div class="pricing-cards">
                 <div class="pricing-card">
                     <div class="pricing-header">
@@ -504,57 +503,57 @@
                         <li><span class="check">✓</span> Livraison progressive</li>
                         <li><span class="check">✓</span> Service Client 24/7</li>
                     </ul>
-                    <a href="https://buy.stripe.com/dRm3cucC71f2ahs2RxabK0e" class="btn btn-outline" target="_blank">Commander</a>
+                    <a href="https://buy.stripe.com/dRm3cucC71f2ahs2RxabK0e" class="btn btn-outline" target="_blank" rel="noopener noreferrer">Commander</a>
                 </div>
 
                 <div class="pricing-card featured">
                     <div class="pricing-badge">Populaire</div>
                     <div class="pricing-header">
-                        <h3>10 Avis Negatifs</h3>
+                        <h3>10 Avis Négatifs</h3>
                     </div>
                     <div class="pricing-price">
                         <span class="price">30€</span>
                     </div>
                     <ul class="pricing-features">
-                        <li><span class="check">✓</span> Comptes anciens verifies</li>
-                        <li><span class="check">✓</span> Profils realistes</li>
-                        <li><span class="check">✓</span> Textes Personnalises</li>
-                        <li><span class="check">✓</span> Avis credibles et varies</li>
-                        <li><span class="check">✓</span> Notes 1 a 2 etoiles</li>
-                                                <li><span class="check">✓</span> Garantie remplacement</li>
+                        <li><span class="check">✓</span> Comptes anciens vérifiés</li>
+                        <li><span class="check">✓</span> Profils réalistes</li>
+                        <li><span class="check">✓</span> Textes Personnalisés</li>
+                        <li><span class="check">✓</span> Avis crédibles et variés</li>
+                        <li><span class="check">✓</span> Notes 1 à 2 étoiles</li>
+                        <li><span class="check">✓</span> Garantie remplacement</li>
                         <li><span class="check">✓</span> Livraison progressive</li>
                         <li><span class="check">✓</span> Service Client 24/7</li>
                     </ul>
-                    <a href="https://buy.stripe.com/14A3cucC7g9Wahs1NtabK0c" class="btn btn-primary" title="acheter avis google negatifs" target="_blank">Commander</a>
+                    <a href="https://buy.stripe.com/14A3cucC7g9Wahs1NtabK0c" class="btn btn-primary" title="acheter avis google negatifs" target="_blank" rel="noopener noreferrer">Commander</a>
                 </div>
 
                 <div class="pricing-card">
                     <div class="pricing-header">
-                        <h3>20 Avis Negatifs</h3>
+                        <h3>20 Avis Négatifs</h3>
                     </div>
                     <div class="pricing-price">
                         <span class="price">50€</span>
                     </div>
                     <ul class="pricing-features">
-                        <li><span class="check">✓</span> Comptes anciens verifies</li>
-                        <li><span class="check">✓</span> Profils realistes</li>
-                        <li><span class="check">✓</span> Textes Personnalises</li>
-                        <li><span class="check">✓</span> Avis credibles et varies</li>
-                        <li><span class="check">✓</span> Notes 1 a 2 etoiles</li>
-                                                <li><span class="check">✓</span> Garantie remplacement</li>
+                        <li><span class="check">✓</span> Comptes anciens vérifiés</li>
+                        <li><span class="check">✓</span> Profils réalistes</li>
+                        <li><span class="check">✓</span> Textes Personnalisés</li>
+                        <li><span class="check">✓</span> Avis crédibles et variés</li>
+                        <li><span class="check">✓</span> Notes 1 à 2 étoiles</li>
+                        <li><span class="check">✓</span> Garantie remplacement</li>
                         <li><span class="check">✓</span> Livraison progressive</li>
                         <li><span class="check">✓</span> Service Client 24/7</li>
                     </ul>
-                    <a href="https://buy.stripe.com/dRm28q8lR3nablwdwbabK0d" title="avis google negatifs achat" class="btn btn-outline" target="_blank">Commander</a>
+                    <a href="https://buy.stripe.com/dRm28q8lR3nablwdwbabK0d" title="avis google negatifs achat" class="btn btn-outline" target="_blank" rel="noopener noreferrer">Commander</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="offres" class="pricing">
+    <section id="offres-suppression" class="pricing">
         <div class="container">
-            <h2 class="section-title">Nos Offres Suppression d'avis</h2>
-            <p class="section-subtitle">Supprimez les avis negatifs qui nuisent a votre reputation</p>
+            <h2 class="section-title">Nos Offres Suppression d'Avis</h2>
+            <p class="section-subtitle">Supprimez les avis négatifs qui nuisent à votre réputation</p>
             <div class="pricing-cards">
                 <div class="pricing-card">
                     <div class="pricing-header">
@@ -571,7 +570,7 @@
                                                 <li><span class="check">✓</span> Garantie remplacement</li>
                         <li><span class="check">✓</span> Service Client 24/7</li>
                     </ul>
-                    <a href="https://buy.stripe.com/cNi8wO59F6zm9dodwbabK0b" class="btn btn-outline" title="supprimer 10 avis google" target="_blank">Commander</a>
+                    <a href="https://buy.stripe.com/cNi8wO59F6zm9dodwbabK0b" class="btn btn-outline" title="supprimer 10 avis google" target="_blank" rel="noopener noreferrer">Commander</a>
                 </div>
 
                 <div class="pricing-card featured">
@@ -590,7 +589,7 @@
                                                 <li><span class="check">✓</span> Garantie remplacement</li>
                         <li><span class="check">✓</span> Service Client 24/7</li>
                     </ul>
-                    <a href="https://buy.stripe.com/3cIdR8dGbcXK1KW63JabK0h" class="btn btn-primary" title="supprimer 15 avis google" target="_blank">Commander</a>
+                    <a href="https://buy.stripe.com/3cIdR8dGbcXK1KW63JabK0h" class="btn btn-primary" title="supprimer 15 avis google" target="_blank" rel="noopener noreferrer">Commander</a>
                 </div>
 
                 <div class="pricing-card">
@@ -608,7 +607,7 @@
                                                 <li><span class="check">✓</span> Garantie remplacement</li>
                         <li><span class="check">✓</span> Service Client 24/7</li>
                     </ul>
-                    <a href="https://buy.stripe.com/cNifZg31xe1OgFQfEjabK0i" class="btn btn-outline" title="supprimer 20 avis google" target="_blank">Commander</a>
+                    <a href="https://buy.stripe.com/cNifZg31xe1OgFQfEjabK0i" class="btn btn-outline" title="supprimer 20 avis google" target="_blank" rel="noopener noreferrer">Commander</a>
                 </div>
             </div>
         </div>
@@ -619,19 +618,19 @@
             <h2 class="section-title">Ils ont testé… et ils ont adopté.</h2>
             <div class="testimonials-grid">
                 <div class="testimonial-card">
-                    <img src="1.webp" alt="acheter avis google my business" title="acheter avis google my business" class="testimonial-img" loading="lazy">
+                    <img src="1.webp" alt="Capture d'écran d'un avis client satisfait sur Google" title="Témoignage client avis Google" width="768" height="1496" class="testimonial-img" loading="lazy">
                 </div>
                 <div class="testimonial-card">
-                    <img src="2.webp" alt="acheter commentaire google" title="acheter commentaire google" class="testimonial-img" loading="lazy">
+                    <img src="2.webp" alt="Retour d'expérience client après achat d'avis Google" title="Résultat client avis Google" width="768" height="1496" class="testimonial-img" loading="lazy">
                 </div>
                 <div class="testimonial-card">
-                    <img src="3.webp" alt="achat avis positif google" title="achat avis positif google" class="testimonial-img" loading="lazy">
+                    <img src="3.webp" alt="Témoignage client avec amélioration de note Google" title="Amélioration note Google" width="768" height="1496" class="testimonial-img" loading="lazy">
                 </div>
                 <div class="testimonial-card">
-                    <img src="4.webp" alt="acheter des avis google negatif" title="acheter des avis google negatif" class="testimonial-img" loading="lazy">
+                    <img src="4.webp" alt="Résultat client après commande d'avis sur Google Maps" title="Résultat avis Google Maps" width="768" height="1496" class="testimonial-img" loading="lazy">
                 </div>
                 <div class="testimonial-card">
-                    <img src="5.webp" alt="achat avis positifs" title="achat avis positifs" class="testimonial-img" loading="lazy">
+                    <img src="5.webp" alt="Capture d'écran d'un client satisfait du service Avis Market" title="Client satisfait Avis Market" width="768" height="1496" class="testimonial-img" loading="lazy">
                 </div>
             </div>
         </div>
@@ -642,23 +641,23 @@
             <h2 class="section-title">Tout savoir sur l'achat d'avis Google</h2>
             <div class="seo-text">
                 <h3>Pourquoi les avis Google sont essentiels pour votre entreprise ?</h3>
-                <p>Les <strong>avis Google</strong> sont devenus un facteur determinant pour le succes des entreprises locales. Que vous soyez un restaurant, un hotel, un commerce de proximite ou un prestataire de services, votre <strong>note Google</strong> influence directement votre visibilite et votre chiffre d'affaires. En effet, <strong>93% des consommateurs</strong> consultent les avis en ligne avant de faire un achat ou de choisir un etablissement.</p>
+                <p>Les <strong>avis Google</strong> sont devenus un facteur déterminant pour le succès des entreprises locales. Que vous soyez un restaurant, un hôtel, un commerce de proximité ou un prestataire de services, votre <strong>note Google</strong> influence directement votre visibilité et votre chiffre d'affaires. En effet, <strong>93% des consommateurs</strong> consultent les avis en ligne avant de faire un achat ou de choisir un établissement.</p>
 
-                <h3>Comment ameliorer sa note Google My Business ?</h3>
-                <p>Pour <strong>ameliorer votre note Google</strong>, plusieurs solutions existent : demander des avis a vos clients satisfaits, repondre aux avis existants, ou faire appel a un service professionnel d'<strong>achat d'avis Google</strong>. Notre service vous permet d'obtenir des avis positifs rediges par des comptes francais verifies, avec une livraison progressive pour un resultat naturel.</p>
+                <h3>Comment améliorer sa note Google My Business ?</h3>
+                <p>Pour <strong>améliorer votre note Google</strong>, plusieurs solutions existent : demander des avis à vos clients satisfaits, répondre aux avis existants, ou faire appel à un service professionnel d'<strong>achat d'avis Google</strong>. Notre service vous permet d'obtenir des avis positifs rédigés par des comptes français vérifiés, avec une livraison progressive pour un résultat naturel.</p>
 
                 <h3>L'importance du SEO local et des avis Google</h3>
-                <p>Le <strong>referencement local</strong> (SEO local) depend en grande partie de vos avis Google. Plus vous avez d'avis positifs avec une note elevee, plus votre <strong>fiche Google My Business</strong> sera visible dans le pack local et sur Google Maps. C'est un cercle vertueux : plus de visibilite signifie plus de clients, et plus de clients signifie potentiellement plus d'avis positifs.</p>
+                <p>Le <strong>référencement local</strong> (SEO local) dépend en grande partie de vos avis Google. Plus vous avez d'avis positifs avec une note élevée, plus votre <strong>fiche Google My Business</strong> sera visible dans le pack local et sur Google Maps. C'est un cercle vertueux : plus de visibilité signifie plus de clients, et plus de clients signifie potentiellement plus d'avis positifs.</p>
 
                 <h3>Nos garanties pour l'achat d'avis Google</h3>
-                <p>Chez Avis Market, nous proposons une <strong>garantie a vie</strong> sur tous les avis achetes. Si un avis venait a disparaitre, nous le remplacons gratuitement. Nos avis sont rediges par des comptes francais avec des profils complets, et la livraison se fait de maniere progressive (1 a 2 avis par jour) pour garantir un aspect 100% naturel.</p>
+                <p>Chez Avis Market, nous proposons une <strong>garantie à vie</strong> sur tous les avis achetés. Si un avis venait à disparaître, nous le remplaçons gratuitement. Nos avis sont rédigés par des comptes français avec des profils complets, et la livraison se fait de manière progressive (1 à 2 avis par jour) pour garantir un aspect 100% naturel. Découvrez également notre service de <a href="supprimer-avis-google.html">suppression d'avis Google négatifs</a> et notre offre d'<a href="acheter-avis-negatif-google.html">avis Google négatifs</a>.</p>
             </div>
         </div>
     </section>
 
     <section class="faq">
         <div class="container">
-            <h2 class="section-title">Questions Frequentes sur l'Achat d'Avis Google</h2>
+            <h2 class="section-title">Questions Fréquentes sur l'Achat d'Avis Google</h2>
             <div class="faq-list">
                 <div class="faq-item">
                     <button class="faq-question">
@@ -705,7 +704,7 @@
             <div class="footer-content">
                 <div class="footer-brand">
                                 <a href="https://avis-market.fr" class="logo">
-                        <img src="logo.png" alt="acheter avis google business" title="acheter avis google business" class="logo-img">
+                        <img src="logo.png" alt="Avis Market - Logo" title="Avis Market" width="512" height="512" class="logo-img">
                     </a>
                     <p>Boostez votre réputation en ligne avec des avis Google de qualité.</p>
                 </div>
@@ -713,7 +712,9 @@
                     <h4>Navigation</h4>
                     <ul>
                         <li><a href="#accueil">Accueil</a></li>
-                        <li><a href="#offres">Nos Offres</a></li>
+                        <li><a href="#offres-positifs">Nos Offres</a></li>
+                        <li><a href="acheter-avis-negatif-google.html">Avis Négatifs</a></li>
+                        <li><a href="supprimer-avis-google.html">Supprimer Avis</a></li>
                     </ul>
                 </div>
                 <div class="footer-links">
@@ -992,7 +993,14 @@
                 if (animated) return;
 
                 statNumbers.forEach(stat => {
-                    const target = parseInt(stat.textContent);
+                    const staticText = stat.getAttribute('data-static');
+                    if (staticText) {
+                        stat.textContent = staticText;
+                        return;
+                    }
+                    const target = parseInt(stat.getAttribute('data-target') || stat.textContent);
+                    const suffix = stat.getAttribute('data-suffix') || '%';
+                    if (isNaN(target) || target <= 0) return;
                     let current = 0;
                     const increment = target / 50;
                     const duration = 2000;
@@ -1001,10 +1009,10 @@
                     const counter = setInterval(() => {
                         current += increment;
                         if (current >= target) {
-                            stat.textContent = target + '%';
+                            stat.textContent = target + suffix;
                             clearInterval(counter);
                         } else {
-                            stat.textContent = Math.floor(current) + '%';
+                            stat.textContent = Math.floor(current) + suffix;
                         }
                     }, stepTime);
                 });

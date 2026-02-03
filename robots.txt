@@ -3,6 +3,3 @@ Allow: /
 
 # Sitemap
 Sitemap: https://avis-market.fr/sitemap.xml
-
-# Crawl-delay pour eviter la surcharge
-Crawl-delay: 1
