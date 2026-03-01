@@ -162,7 +162,6 @@ img {
     color: var(--primary);
 }
 
-/* Dropdown Menu */
 .nav-item {
     position: relative;
 }
@@ -825,7 +824,6 @@ img {
         text-align: center;
     }
 
-    /* Dropdown mobile */
     .nav-item.dropdown {
         position: relative;
     }
@@ -1012,7 +1010,6 @@ img {
     }
 }
 
-/* SEO Content Section */
 .seo-content {
     padding: 80px 0;
     background: var(--white);
