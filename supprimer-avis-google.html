@@ -38,7 +38,7 @@
     {
         "@context": "https://schema.org",
         "@type": "Organization",
-        "name": "achat avis google",
+        "name": "Avis Market",
         "url": "https://avis-market.fr",
         "logo": "https://avis-market.fr/avis-market-logo.png",
         "description": "Service de suppression d'avis Google negatifs pour restaurer votre e-reputation.",
@@ -69,7 +69,8 @@
     {
         "@context": "https://schema.org",
         "@type": "Service",
-        "serviceType": "Suppression Avis Google",
+        "serviceType": "Supprimer Avis Google",
+        "url": "https://avis-market.fr/supprimer-avis-google.html",
         "provider": {
             "@type": "Organization",
             "name": "Avis Market"
@@ -128,137 +129,146 @@
         "name": "Nos Offres Suppression d'Avis Google",
         "itemListElement": [
             {
-                "@type": "Product",
+                "@type": "ListItem",
                 "position": 1,
-                "name": "10 Suppressions d'Avis Google",
-                "description": "Pack de 10 avis Google supprimes avec suppression garantie, delai rapide 3-14 jours, service discret et facture fournie.",
-                "image": "https://avis-market.fr/avis-market-logo.png",
-                "offers": {
-                    "@type": "Offer",
-                    "price": "50",
-                    "priceCurrency": "EUR",
-                    "availability": "https://schema.org/InStock",
-                    "shippingDetails": {
-                        "@type": "OfferShippingDetails",
-                        "shippingRate": {
-                            "@type": "MonetaryAmount",
-                            "value": "0",
-                            "currency": "EUR"
-                        },
-                        "deliveryTime": {
-                            "@type": "ShippingDeliveryTime",
-                            "handlingTime": {
-                                "@type": "QuantitativeValue",
-                                "minValue": 1,
-                                "maxValue": 2,
-                                "unitCode": "DAY"
+                "item": {
+                    "@type": "Product",
+                    "name": "10 Suppressions d'Avis Google",
+                    "description": "Pack de 10 avis Google supprimes avec suppression garantie, delai rapide 3-14 jours, service discret et facture fournie.",
+                    "image": "https://avis-market.fr/avis-market-logo.png",
+                    "offers": {
+                        "@type": "Offer",
+                        "price": "50",
+                        "priceCurrency": "EUR",
+                        "availability": "https://schema.org/InStock",
+                        "shippingDetails": {
+                            "@type": "OfferShippingDetails",
+                            "shippingRate": {
+                                "@type": "MonetaryAmount",
+                                "value": "0",
+                                "currency": "EUR"
                             },
-                            "transitTime": {
-                                "@type": "QuantitativeValue",
-                                "minValue": 3,
-                                "maxValue": 14,
-                                "unitCode": "DAY"
+                            "deliveryTime": {
+                                "@type": "ShippingDeliveryTime",
+                                "handlingTime": {
+                                    "@type": "QuantitativeValue",
+                                    "minValue": 1,
+                                    "maxValue": 2,
+                                    "unitCode": "DAY"
+                                },
+                                "transitTime": {
+                                    "@type": "QuantitativeValue",
+                                    "minValue": 3,
+                                    "maxValue": 14,
+                                    "unitCode": "DAY"
+                                }
+                            },
+                            "shippingDestination": {
+                                "@type": "DefinedRegion",
+                                "addressCountry": "FR"
                             }
                         },
-                        "shippingDestination": {
-                            "@type": "DefinedRegion",
-                            "addressCountry": "FR"
+                        "hasMerchantReturnPolicy": {
+                            "@type": "MerchantReturnPolicy",
+                            "applicableCountry": "FR",
+                            "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
                         }
-                    },
-                    "hasMerchantReturnPolicy": {
-                        "@type": "MerchantReturnPolicy",
-                        "applicableCountry": "FR",
-                        "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
                     }
                 }
             },
             {
-                "@type": "Product",
+                "@type": "ListItem",
                 "position": 2,
-                "name": "15 Suppressions d'Avis Google",
-                "description": "Pack de 15 avis Google supprimes avec suppression garantie, delai rapide 3-14 jours, service discret et facture fournie.",
-                "image": "https://avis-market.fr/avis-market-logo.png",
-                "offers": {
-                    "@type": "Offer",
-                    "price": "60",
-                    "priceCurrency": "EUR",
-                    "availability": "https://schema.org/InStock",
-                    "shippingDetails": {
-                        "@type": "OfferShippingDetails",
-                        "shippingRate": {
-                            "@type": "MonetaryAmount",
-                            "value": "0",
-                            "currency": "EUR"
-                        },
-                        "deliveryTime": {
-                            "@type": "ShippingDeliveryTime",
-                            "handlingTime": {
-                                "@type": "QuantitativeValue",
-                                "minValue": 1,
-                                "maxValue": 2,
-                                "unitCode": "DAY"
+                "item": {
+                    "@type": "Product",
+                    "name": "15 Suppressions d'Avis Google",
+                    "description": "Pack de 15 avis Google supprimes avec suppression garantie, delai rapide 3-14 jours, service discret et facture fournie.",
+                    "image": "https://avis-market.fr/avis-market-logo.png",
+                    "offers": {
+                        "@type": "Offer",
+                        "price": "60",
+                        "priceCurrency": "EUR",
+                        "availability": "https://schema.org/InStock",
+                        "shippingDetails": {
+                            "@type": "OfferShippingDetails",
+                            "shippingRate": {
+                                "@type": "MonetaryAmount",
+                                "value": "0",
+                                "currency": "EUR"
                             },
-                            "transitTime": {
-                                "@type": "QuantitativeValue",
-                                "minValue": 3,
-                                "maxValue": 14,
-                                "unitCode": "DAY"
+                            "deliveryTime": {
+                                "@type": "ShippingDeliveryTime",
+                                "handlingTime": {
+                                    "@type": "QuantitativeValue",
+                                    "minValue": 1,
+                                    "maxValue": 2,
+                                    "unitCode": "DAY"
+                                },
+                                "transitTime": {
+                                    "@type": "QuantitativeValue",
+                                    "minValue": 3,
+                                    "maxValue": 14,
+                                    "unitCode": "DAY"
+                                }
+                            },
+                            "shippingDestination": {
+                                "@type": "DefinedRegion",
+                                "addressCountry": "FR"
                             }
                         },
-                        "shippingDestination": {
-                            "@type": "DefinedRegion",
-                            "addressCountry": "FR"
+                        "hasMerchantReturnPolicy": {
+                            "@type": "MerchantReturnPolicy",
+                            "applicableCountry": "FR",
+                            "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
                         }
-                    },
-                    "hasMerchantReturnPolicy": {
-                        "@type": "MerchantReturnPolicy",
-                        "applicableCountry": "FR",
-                        "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
                     }
                 }
             },
             {
-                "@type": "Product",
+                "@type": "ListItem",
                 "position": 3,
-                "name": "20 Suppressions d'Avis Google",
-                "description": "Pack de 20 avis Google supprimes avec suppression garantie, delai rapide 3-14 jours, service discret et facture fournie.",
-                "image": "https://avis-market.fr/avis-market-logo.png",
-                "offers": {
-                    "@type": "Offer",
-                    "price": "70",
-                    "priceCurrency": "EUR",
-                    "availability": "https://schema.org/InStock",
-                    "shippingDetails": {
-                        "@type": "OfferShippingDetails",
-                        "shippingRate": {
-                            "@type": "MonetaryAmount",
-                            "value": "0",
-                            "currency": "EUR"
-                        },
-                        "deliveryTime": {
-                            "@type": "ShippingDeliveryTime",
-                            "handlingTime": {
-                                "@type": "QuantitativeValue",
-                                "minValue": 1,
-                                "maxValue": 2,
-                                "unitCode": "DAY"
+                "item": {
+                    "@type": "Product",
+                    "name": "20 Suppressions d'Avis Google",
+                    "description": "Pack de 20 avis Google supprimes avec suppression garantie, delai rapide 3-14 jours, service discret et facture fournie.",
+                    "image": "https://avis-market.fr/avis-market-logo.png",
+                    "offers": {
+                        "@type": "Offer",
+                        "price": "70",
+                        "priceCurrency": "EUR",
+                        "availability": "https://schema.org/InStock",
+                        "shippingDetails": {
+                            "@type": "OfferShippingDetails",
+                            "shippingRate": {
+                                "@type": "MonetaryAmount",
+                                "value": "0",
+                                "currency": "EUR"
                             },
-                            "transitTime": {
-                                "@type": "QuantitativeValue",
-                                "minValue": 3,
-                                "maxValue": 14,
-                                "unitCode": "DAY"
+                            "deliveryTime": {
+                                "@type": "ShippingDeliveryTime",
+                                "handlingTime": {
+                                    "@type": "QuantitativeValue",
+                                    "minValue": 1,
+                                    "maxValue": 2,
+                                    "unitCode": "DAY"
+                                },
+                                "transitTime": {
+                                    "@type": "QuantitativeValue",
+                                    "minValue": 3,
+                                    "maxValue": 14,
+                                    "unitCode": "DAY"
+                                }
+                            },
+                            "shippingDestination": {
+                                "@type": "DefinedRegion",
+                                "addressCountry": "FR"
                             }
                         },
-                        "shippingDestination": {
-                            "@type": "DefinedRegion",
-                            "addressCountry": "FR"
+                        "hasMerchantReturnPolicy": {
+                            "@type": "MerchantReturnPolicy",
+                            "applicableCountry": "FR",
+                            "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
                         }
-                    },
-                    "hasMerchantReturnPolicy": {
-                        "@type": "MerchantReturnPolicy",
-                        "applicableCountry": "FR",
-                        "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
                     }
                 }
             }
@@ -279,8 +289,8 @@
                         <a href="#" class="nav-link active">Nos Offres <span class="dropdown-arrow">▼</span></a>
                         <div class="dropdown-menu">
                             <a href="https://avis-market.fr#offres-positifs">Avis Positifs</a>
-                            <a href="acheter-avis-negatif-google.html#offres">Avis Négatifs</a>
-                            <a href="supprimer-avis-google.html#offres">Supprimer Avis</a>
+                            <a href="https://avis-market.fr/acheter-avis-negatif-google.html#offres">Avis Négatifs</a>
+                            <a href="https://avis-market.fr/supprimer-avis-google.html#offres">Supprimer Avis</a>
                         </div>
                     </li>
                 </ul>
@@ -485,7 +495,7 @@
                 <p>Le délai de <strong>suppression d'un avis Google</strong> varie généralement entre 3 et 14 jours selon la complexité du cas. Certains avis peuvent être retirés plus rapidement si la violation des règles Google est évidente. Nous vous tenons informé de l'avancement à chaque étape du processus.</p>
 
                 <h3>Que faire si Google refuse de supprimer l'avis ?</h3>
-                <p>Si la suppression directe n'est pas possible, nous proposons des alternatives : vous pouvez <strong>diluer l'impact des avis négatifs</strong> en obtenant davantage d'<a href="https://avis-market.fr">avis Google positifs</a>, ou répondre professionnellement à l'avis pour montrer votre engagement envers la satisfaction client. Notre équipe vous conseille sur la meilleure stratégie pour votre e-réputation. Voir aussi notre service d'<a href="acheter-avis-negatif-google.html">avis Google négatifs</a>.</p>
+                <p>Si la suppression directe n'est pas possible, nous proposons des alternatives : vous pouvez <strong>diluer l'impact des avis négatifs</strong> en obtenant davantage d'<a href="https://avis-market.fr">avis Google positifs</a>, ou répondre professionnellement à l'avis pour montrer votre engagement envers la satisfaction client. Notre équipe vous conseille sur la meilleure stratégie pour votre e-réputation. Voir aussi notre service d'<a href="https://avis-market.fr/acheter-avis-negatif-google.html">avis Google négatifs</a>.</p>
             </div>
         </div>
     </section>
@@ -548,7 +558,7 @@
                     <ul>
                         <li><a href="https://avis-market.fr">Accueil</a></li>
                         <li><a href="#offres">Nos Offres</a></li>
-                        <li><a href="acheter-avis-negatif-google.html">Avis Négatifs</a></li>
+                        <li><a href="https://avis-market.fr/acheter-avis-negatif-google.html">Avis Négatifs</a></li>
                     </ul>
                 </div>
                 <div class="footer-links">

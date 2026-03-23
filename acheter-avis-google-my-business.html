@@ -46,6 +46,7 @@
         "@context": "https://schema.org",
         "@type": "Service",
         "serviceType": "Acheter Avis Google My Business",
+        "url": "https://avis-market.fr/acheter-avis-google-my-business.html",
         "provider": {"@type": "Organization", "name": "Avis Market"},
         "areaServed": {"@type": "Country", "name": "France"},
         "description": "Service d'achat d'avis Google My Business pour améliorer votre fiche établissement et votre visibilité locale sur Google Maps."
@@ -70,137 +71,146 @@
         "name": "Nos Offres Avis Positifs",
         "itemListElement": [
             {
-                "@type": "Product",
+                "@type": "ListItem",
                 "position": 1,
-                "name": "25 Avis Positifs + 5 offerts",
-                "description": "Pack de 25 avis Google positifs avec comptes francais, textes personnalises, garantie a vie et service client 24/7.",
-                "image": "https://avis-market.fr/avis-market-logo.png",
-                "offers": {
-                    "@type": "Offer",
-                    "price": "99",
-                    "priceCurrency": "EUR",
-                    "availability": "https://schema.org/InStock",
-                    "shippingDetails": {
-                        "@type": "OfferShippingDetails",
-                        "shippingRate": {
-                            "@type": "MonetaryAmount",
-                            "value": "0",
-                            "currency": "EUR"
-                        },
-                        "deliveryTime": {
-                            "@type": "ShippingDeliveryTime",
-                            "handlingTime": {
-                                "@type": "QuantitativeValue",
-                                "minValue": 1,
-                                "maxValue": 2,
-                                "unitCode": "DAY"
+                "item": {
+                    "@type": "Product",
+                    "name": "25 Avis Positifs + 5 offerts",
+                    "description": "Pack de 25 avis Google positifs avec comptes francais, textes personnalises, garantie a vie et service client 24/7.",
+                    "image": "https://avis-market.fr/avis-market-logo.png",
+                    "offers": {
+                        "@type": "Offer",
+                        "price": "99",
+                        "priceCurrency": "EUR",
+                        "availability": "https://schema.org/InStock",
+                        "shippingDetails": {
+                            "@type": "OfferShippingDetails",
+                            "shippingRate": {
+                                "@type": "MonetaryAmount",
+                                "value": "0",
+                                "currency": "EUR"
                             },
-                            "transitTime": {
-                                "@type": "QuantitativeValue",
-                                "minValue": 12,
-                                "maxValue": 30,
-                                "unitCode": "DAY"
+                            "deliveryTime": {
+                                "@type": "ShippingDeliveryTime",
+                                "handlingTime": {
+                                    "@type": "QuantitativeValue",
+                                    "minValue": 1,
+                                    "maxValue": 2,
+                                    "unitCode": "DAY"
+                                },
+                                "transitTime": {
+                                    "@type": "QuantitativeValue",
+                                    "minValue": 12,
+                                    "maxValue": 30,
+                                    "unitCode": "DAY"
+                                }
+                            },
+                            "shippingDestination": {
+                                "@type": "DefinedRegion",
+                                "addressCountry": "FR"
                             }
                         },
-                        "shippingDestination": {
-                            "@type": "DefinedRegion",
-                            "addressCountry": "FR"
+                        "hasMerchantReturnPolicy": {
+                            "@type": "MerchantReturnPolicy",
+                            "applicableCountry": "FR",
+                            "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
                         }
-                    },
-                    "hasMerchantReturnPolicy": {
-                        "@type": "MerchantReturnPolicy",
-                        "applicableCountry": "FR",
-                        "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
                     }
                 }
             },
             {
-                "@type": "Product",
+                "@type": "ListItem",
                 "position": 2,
-                "name": "50 Avis Positifs + 10 offerts",
-                "description": "Pack de 50 avis Google positifs avec comptes francais, textes personnalises, garantie a vie et service client 24/7.",
-                "image": "https://avis-market.fr/avis-market-logo.png",
-                "offers": {
-                    "@type": "Offer",
-                    "price": "169",
-                    "priceCurrency": "EUR",
-                    "availability": "https://schema.org/InStock",
-                    "shippingDetails": {
-                        "@type": "OfferShippingDetails",
-                        "shippingRate": {
-                            "@type": "MonetaryAmount",
-                            "value": "0",
-                            "currency": "EUR"
-                        },
-                        "deliveryTime": {
-                            "@type": "ShippingDeliveryTime",
-                            "handlingTime": {
-                                "@type": "QuantitativeValue",
-                                "minValue": 1,
-                                "maxValue": 2,
-                                "unitCode": "DAY"
+                "item": {
+                    "@type": "Product",
+                    "name": "50 Avis Positifs + 10 offerts",
+                    "description": "Pack de 50 avis Google positifs avec comptes francais, textes personnalises, garantie a vie et service client 24/7.",
+                    "image": "https://avis-market.fr/avis-market-logo.png",
+                    "offers": {
+                        "@type": "Offer",
+                        "price": "169",
+                        "priceCurrency": "EUR",
+                        "availability": "https://schema.org/InStock",
+                        "shippingDetails": {
+                            "@type": "OfferShippingDetails",
+                            "shippingRate": {
+                                "@type": "MonetaryAmount",
+                                "value": "0",
+                                "currency": "EUR"
                             },
-                            "transitTime": {
-                                "@type": "QuantitativeValue",
-                                "minValue": 25,
-                                "maxValue": 60,
-                                "unitCode": "DAY"
+                            "deliveryTime": {
+                                "@type": "ShippingDeliveryTime",
+                                "handlingTime": {
+                                    "@type": "QuantitativeValue",
+                                    "minValue": 1,
+                                    "maxValue": 2,
+                                    "unitCode": "DAY"
+                                },
+                                "transitTime": {
+                                    "@type": "QuantitativeValue",
+                                    "minValue": 25,
+                                    "maxValue": 60,
+                                    "unitCode": "DAY"
+                                }
+                            },
+                            "shippingDestination": {
+                                "@type": "DefinedRegion",
+                                "addressCountry": "FR"
                             }
                         },
-                        "shippingDestination": {
-                            "@type": "DefinedRegion",
-                            "addressCountry": "FR"
+                        "hasMerchantReturnPolicy": {
+                            "@type": "MerchantReturnPolicy",
+                            "applicableCountry": "FR",
+                            "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
                         }
-                    },
-                    "hasMerchantReturnPolicy": {
-                        "@type": "MerchantReturnPolicy",
-                        "applicableCountry": "FR",
-                        "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
                     }
                 }
             },
             {
-                "@type": "Product",
+                "@type": "ListItem",
                 "position": 3,
-                "name": "100 Avis Positifs + 20 offerts",
-                "description": "Pack de 100 avis Google positifs avec comptes francais, textes personnalises, garantie a vie et service client 24/7.",
-                "image": "https://avis-market.fr/avis-market-logo.png",
-                "offers": {
-                    "@type": "Offer",
-                    "price": "239",
-                    "priceCurrency": "EUR",
-                    "availability": "https://schema.org/InStock",
-                    "shippingDetails": {
-                        "@type": "OfferShippingDetails",
-                        "shippingRate": {
-                            "@type": "MonetaryAmount",
-                            "value": "0",
-                            "currency": "EUR"
-                        },
-                        "deliveryTime": {
-                            "@type": "ShippingDeliveryTime",
-                            "handlingTime": {
-                                "@type": "QuantitativeValue",
-                                "minValue": 1,
-                                "maxValue": 2,
-                                "unitCode": "DAY"
+                "item": {
+                    "@type": "Product",
+                    "name": "100 Avis Positifs + 20 offerts",
+                    "description": "Pack de 100 avis Google positifs avec comptes francais, textes personnalises, garantie a vie et service client 24/7.",
+                    "image": "https://avis-market.fr/avis-market-logo.png",
+                    "offers": {
+                        "@type": "Offer",
+                        "price": "239",
+                        "priceCurrency": "EUR",
+                        "availability": "https://schema.org/InStock",
+                        "shippingDetails": {
+                            "@type": "OfferShippingDetails",
+                            "shippingRate": {
+                                "@type": "MonetaryAmount",
+                                "value": "0",
+                                "currency": "EUR"
                             },
-                            "transitTime": {
-                                "@type": "QuantitativeValue",
-                                "minValue": 50,
-                                "maxValue": 120,
-                                "unitCode": "DAY"
+                            "deliveryTime": {
+                                "@type": "ShippingDeliveryTime",
+                                "handlingTime": {
+                                    "@type": "QuantitativeValue",
+                                    "minValue": 1,
+                                    "maxValue": 2,
+                                    "unitCode": "DAY"
+                                },
+                                "transitTime": {
+                                    "@type": "QuantitativeValue",
+                                    "minValue": 50,
+                                    "maxValue": 120,
+                                    "unitCode": "DAY"
+                                }
+                            },
+                            "shippingDestination": {
+                                "@type": "DefinedRegion",
+                                "addressCountry": "FR"
                             }
                         },
-                        "shippingDestination": {
-                            "@type": "DefinedRegion",
-                            "addressCountry": "FR"
+                        "hasMerchantReturnPolicy": {
+                            "@type": "MerchantReturnPolicy",
+                            "applicableCountry": "FR",
+                            "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
                         }
-                    },
-                    "hasMerchantReturnPolicy": {
-                        "@type": "MerchantReturnPolicy",
-                        "applicableCountry": "FR",
-                        "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
                     }
                 }
             }
@@ -221,8 +231,8 @@
                         <a href="#" class="nav-link">Nos Offres <span class="dropdown-arrow">▼</span></a>
                         <div class="dropdown-menu">
                             <a href="https://avis-market.fr#offres-positifs">Avis Positifs</a>
-                            <a href="acheter-avis-negatif-google.html#offres">Avis Négatifs</a>
-                            <a href="supprimer-avis-google.html#offres">Supprimer Avis</a>
+                            <a href="https://avis-market.fr/acheter-avis-negatif-google.html#offres">Avis Négatifs</a>
+                            <a href="https://avis-market.fr/supprimer-avis-google.html#offres">Supprimer Avis</a>
                         </div>
                     </li>
                 </ul>
@@ -354,7 +364,7 @@
                 <p>Le <strong>pack local</strong> (les 3 résultats affichés avec la carte Google Maps) capte plus de <strong>44% des clics</strong> pour les recherches locales. Pour y apparaître, votre <strong>fiche Google My Business</strong> doit avoir une note supérieure à 4 étoiles et un nombre d'avis significatif. Sans avis, vous n'avez aucune chance d'y figurer face à des concurrents mieux notés.</p>
 
                 <h3>Notre service d'avis optimisé pour Google My Business</h3>
-                <p>Nos <strong>avis Google My Business</strong> sont rédigés par des comptes français vérifiés avec des textes personnalisés mentionnant vos services spécifiques. La livraison progressive (1 à 2 avis par jour) simule une croissance naturelle. Avec notre <strong>garantie à vie</strong>, votre investissement est protégé durablement. Découvrez aussi nos services d'<a href="acheter-avis-google-positifs.html">avis Google positifs</a> et de <a href="supprimer-avis-google.html">suppression d'avis négatifs</a>.</p>
+                <p>Nos <strong>avis Google My Business</strong> sont rédigés par des comptes français vérifiés avec des textes personnalisés mentionnant vos services spécifiques. La livraison progressive (1 à 2 avis par jour) simule une croissance naturelle. Avec notre <strong>garantie à vie</strong>, votre investissement est protégé durablement. Découvrez aussi nos services d'<a href="https://avis-market.fr/acheter-avis-google-positifs.html">avis Google positifs</a> et de <a href="https://avis-market.fr/supprimer-avis-google.html">suppression d'avis négatifs</a>.</p>
             </div>
         </div>
     </section>
@@ -375,7 +385,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand"><a href="https://avis-market.fr" class="logo"><img src="avis-market-logo.png" alt="Avis Market - Logo" title="Avis Market" width="512" height="512" class="logo-img"></a><p>Boostez votre réputation en ligne avec des avis Google de qualité.</p></div>
-                <div class="footer-links"><h4>Navigation</h4><ul><li><a href="https://avis-market.fr">Accueil</a></li><li><a href="https://avis-market.fr#offres-positifs">Nos Offres</a></li><li><a href="acheter-avis-negatif-google.html">Avis Négatifs</a></li><li><a href="supprimer-avis-google.html">Supprimer Avis</a></li></ul></div>
+                <div class="footer-links"><h4>Navigation</h4><ul><li><a href="https://avis-market.fr">Accueil</a></li><li><a href="https://avis-market.fr#offres-positifs">Nos Offres</a></li><li><a href="https://avis-market.fr/acheter-avis-negatif-google.html">Avis Négatifs</a></li><li><a href="https://avis-market.fr/supprimer-avis-google.html">Supprimer Avis</a></li></ul></div>
                 <div class="footer-links"><h4>Légal</h4><ul><li><a href="#">Mentions légales</a></li><li><a href="#">CGV</a></li><li><a href="#">Politique de confidentialité</a></li></ul></div>
                 <div class="footer-links"><h4>Contact</h4><ul><li><a href="mailto:support@avis-market.fr">support@avis-market.fr</a></li></ul></div>
             </div>
