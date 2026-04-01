@@ -46,12 +46,24 @@
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "Service",
-        "serviceType": "Achat Avis Google Plombier",
-        "url": "https://avis-market.fr/avis-google-plombier.html",
-        "provider": {"@type": "Organization", "name": "Avis Market"},
-        "areaServed": {"@type": "Country", "name": "France"},
-        "description": "Service d'achat d'avis Google spécialisé pour les plombiers. Avis mentionnant réactivité, compétence et tarifs transparents."
+        "@type": "Organization",
+        "name": "Avis Market",
+        "url": "https://avis-market.fr",
+        "logo": "https://avis-market.fr/avis-market-logo.png",
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Nos services",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Achat Avis Google Plombier",
+                        "url": "https://avis-market.fr/avis-google-plombier.html"
+                    }
+                }
+            ]
+        }
     }
     </script>
     <script type="application/ld+json">

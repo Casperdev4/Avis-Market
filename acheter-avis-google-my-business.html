@@ -44,12 +44,24 @@
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "Service",
-        "serviceType": "Acheter Avis Google My Business",
-        "url": "https://avis-market.fr/acheter-avis-google-my-business.html",
-        "provider": {"@type": "Organization", "name": "Avis Market"},
-        "areaServed": {"@type": "Country", "name": "France"},
-        "description": "Service d'achat d'avis Google My Business pour améliorer votre fiche établissement et votre visibilité locale sur Google Maps."
+        "@type": "Organization",
+        "name": "Avis Market",
+        "url": "https://avis-market.fr",
+        "logo": "https://avis-market.fr/avis-market-logo.png",
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Nos services",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Acheter Avis Google My Business",
+                        "url": "https://avis-market.fr/acheter-avis-google-my-business.html"
+                    }
+                }
+            ]
+        }
     }
     </script>
     <script type="application/ld+json">
