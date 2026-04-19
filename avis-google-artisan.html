@@ -36,225 +36,230 @@
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-            {"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://avis-market.fr/"},
-            {"@type": "ListItem", "position": 2, "name": "Avis Google Artisan", "item": "https://avis-market.fr/avis-google-artisan.html"}
-        ]
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Avis Market",
-        "url": "https://avis-market.fr",
-        "logo": "https://avis-market.fr/avis-market-logo.png",
-        "hasOfferCatalog": {
-            "@type": "OfferCatalog",
-            "name": "Nos services",
-            "itemListElement": [
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Achat Avis Google Artisan",
-                        "url": "https://avis-market.fr/avis-google-artisan.html"
+        "@graph": [
+            {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Accueil",
+                        "item": "https://avis-market.fr/"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Avis Google Artisan",
+                        "item": "https://avis-market.fr/avis-google-artisan.html"
                     }
-                }
-            ]
-        }
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "Les avis mentionnent-ils des corps de métier artisanaux précis ?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Oui, chaque avis est rédigé en fonction de votre spécialité artisanale. Que vous soyez maçon, menuisier, carreleur ou peintre, les témoignages décrivent des prestations cohérentes avec votre métier et votre savoir-faire."
-                }
+                ]
             },
             {
-                "@type": "Question",
-                "name": "Combien d'avis un artisan doit-il avoir pour inspirer confiance ?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Entre 25 et 50 avis suffisent pour asseoir votre crédibilité. La plupart des artisans locaux n'ont que quelques avis, ce qui vous offre une opportunité de vous distinguer rapidement dans votre secteur géographique."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Les avis peuvent-ils évoquer la qualité des finitions et des matériaux ?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Absolument. Nos rédacteurs intègrent des détails sur la qualité de vos finitions, le soin apporté au chantier et le choix des matériaux. Ces éléments concrets renforcent la crédibilité de chaque témoignage."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Est-ce que les avis aident un artisan à obtenir plus de devis ?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Oui, une fiche Google bien notée génère significativement plus de demandes de devis. Les particuliers contactent en priorité les artisans affichant une note élevée et des retours détaillés sur leurs prestations."
-                }
-            }
-        ]
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "ItemList",
-        "name": "Nos Offres Avis Positifs",
-        "itemListElement": [
-            {
-                "@type": "ListItem",
-                "position": 1,
-                "item": {
-                    "@type": "Product",
-                    "name": "25 Avis Positifs + 5 offerts",
-                    "description": "Pack de 25 avis Google positifs avec comptes francais, textes personnalises, garantie a vie et service client 24/7.",
-                    "image": "https://avis-market.fr/avis-market-logo.png",
-                    "offers": {
-                        "@type": "Offer",
-                        "price": "99",
-                        "priceCurrency": "EUR",
-                        "availability": "https://schema.org/InStock",
-                        "shippingDetails": {
-                            "@type": "OfferShippingDetails",
-                            "shippingRate": {
-                                "@type": "MonetaryAmount",
-                                "value": "0",
-                                "currency": "EUR"
-                            },
-                            "deliveryTime": {
-                                "@type": "ShippingDeliveryTime",
-                                "handlingTime": {
-                                    "@type": "QuantitativeValue",
-                                    "minValue": 1,
-                                    "maxValue": 2,
-                                    "unitCode": "DAY"
-                                },
-                                "transitTime": {
-                                    "@type": "QuantitativeValue",
-                                    "minValue": 12,
-                                    "maxValue": 30,
-                                    "unitCode": "DAY"
-                                }
-                            },
-                            "shippingDestination": {
-                                "@type": "DefinedRegion",
-                                "addressCountry": "FR"
+                "@type": "Organization",
+                "name": "Avis Market",
+                "url": "https://avis-market.fr",
+                "logo": "https://avis-market.fr/avis-market-logo.png",
+                "hasOfferCatalog": {
+                    "@type": "OfferCatalog",
+                    "name": "Nos services",
+                    "itemListElement": [
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "achat avis google artisan",
+                                "url": "https://avis-market.fr/avis-google-artisan.html"
                             }
-                        },
-                        "hasMerchantReturnPolicy": {
-                            "@type": "MerchantReturnPolicy",
-                            "applicableCountry": "FR",
-                            "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
+                        }
+                    ]
+                }
+            },
+            {
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "Les avis mentionnent-ils des corps de métier artisanaux précis ?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Oui, chaque avis est rédigé en fonction de votre spécialité artisanale. Que vous soyez maçon, menuisier, carreleur ou peintre, les témoignages décrivent des prestations cohérentes avec votre métier et votre savoir-faire."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Combien d'avis un artisan doit-il avoir pour inspirer confiance ?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Entre 25 et 50 avis suffisent pour asseoir votre crédibilité. La plupart des artisans locaux n'ont que quelques avis, ce qui vous offre une opportunité de vous distinguer rapidement dans votre secteur géographique."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Les avis peuvent-ils évoquer la qualité des finitions et des matériaux ?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Absolument. Nos rédacteurs intègrent des détails sur la qualité de vos finitions, le soin apporté au chantier et le choix des matériaux. Ces éléments concrets renforcent la crédibilité de chaque témoignage."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Est-ce que les avis aident un artisan à obtenir plus de devis ?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Oui, une fiche Google bien notée génère significativement plus de demandes de devis. Les particuliers contactent en priorité les artisans affichant une note élevée et des retours détaillés sur leurs prestations."
                         }
                     }
-                }
+                ]
             },
             {
-                "@type": "ListItem",
-                "position": 2,
-                "item": {
-                    "@type": "Product",
-                    "name": "50 Avis Positifs + 10 offerts",
-                    "description": "Pack de 50 avis Google positifs avec comptes francais, textes personnalises, garantie a vie et service client 24/7.",
-                    "image": "https://avis-market.fr/avis-market-logo.png",
-                    "offers": {
-                        "@type": "Offer",
-                        "price": "169",
-                        "priceCurrency": "EUR",
-                        "availability": "https://schema.org/InStock",
-                        "shippingDetails": {
-                            "@type": "OfferShippingDetails",
-                            "shippingRate": {
-                                "@type": "MonetaryAmount",
-                                "value": "0",
-                                "currency": "EUR"
-                            },
-                            "deliveryTime": {
-                                "@type": "ShippingDeliveryTime",
-                                "handlingTime": {
-                                    "@type": "QuantitativeValue",
-                                    "minValue": 1,
-                                    "maxValue": 2,
-                                    "unitCode": "DAY"
+                "@type": "ItemList",
+                "name": "Nos Offres Avis Positifs",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "item": {
+                            "@type": "Product",
+                            "name": "25 Avis Positifs + 5 offerts",
+                            "description": "Pack de 25 avis Google positifs avec comptes francais, textes personnalises, garantie a vie et service client 24/7.",
+                            "image": "https://avis-market.fr/avis-market-logo.png",
+                            "offers": {
+                                "@type": "Offer",
+                                "price": "99",
+                                "priceCurrency": "EUR",
+                                "availability": "https://schema.org/InStock",
+                                "shippingDetails": {
+                                    "@type": "OfferShippingDetails",
+                                    "shippingRate": {
+                                        "@type": "MonetaryAmount",
+                                        "value": "0",
+                                        "currency": "EUR"
+                                    },
+                                    "deliveryTime": {
+                                        "@type": "ShippingDeliveryTime",
+                                        "handlingTime": {
+                                            "@type": "QuantitativeValue",
+                                            "minValue": 1,
+                                            "maxValue": 2,
+                                            "unitCode": "DAY"
+                                        },
+                                        "transitTime": {
+                                            "@type": "QuantitativeValue",
+                                            "minValue": 12,
+                                            "maxValue": 30,
+                                            "unitCode": "DAY"
+                                        }
+                                    },
+                                    "shippingDestination": {
+                                        "@type": "DefinedRegion",
+                                        "addressCountry": "FR"
+                                    }
                                 },
-                                "transitTime": {
-                                    "@type": "QuantitativeValue",
-                                    "minValue": 25,
-                                    "maxValue": 60,
-                                    "unitCode": "DAY"
+                                "hasMerchantReturnPolicy": {
+                                    "@type": "MerchantReturnPolicy",
+                                    "applicableCountry": "FR",
+                                    "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
                                 }
-                            },
-                            "shippingDestination": {
-                                "@type": "DefinedRegion",
-                                "addressCountry": "FR"
                             }
-                        },
-                        "hasMerchantReturnPolicy": {
-                            "@type": "MerchantReturnPolicy",
-                            "applicableCountry": "FR",
-                            "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
+                        }
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "item": {
+                            "@type": "Product",
+                            "name": "50 Avis Positifs + 10 offerts",
+                            "description": "Pack de 50 avis Google positifs avec comptes francais, textes personnalises, garantie a vie et service client 24/7.",
+                            "image": "https://avis-market.fr/avis-market-logo.png",
+                            "offers": {
+                                "@type": "Offer",
+                                "price": "169",
+                                "priceCurrency": "EUR",
+                                "availability": "https://schema.org/InStock",
+                                "shippingDetails": {
+                                    "@type": "OfferShippingDetails",
+                                    "shippingRate": {
+                                        "@type": "MonetaryAmount",
+                                        "value": "0",
+                                        "currency": "EUR"
+                                    },
+                                    "deliveryTime": {
+                                        "@type": "ShippingDeliveryTime",
+                                        "handlingTime": {
+                                            "@type": "QuantitativeValue",
+                                            "minValue": 1,
+                                            "maxValue": 2,
+                                            "unitCode": "DAY"
+                                        },
+                                        "transitTime": {
+                                            "@type": "QuantitativeValue",
+                                            "minValue": 25,
+                                            "maxValue": 60,
+                                            "unitCode": "DAY"
+                                        }
+                                    },
+                                    "shippingDestination": {
+                                        "@type": "DefinedRegion",
+                                        "addressCountry": "FR"
+                                    }
+                                },
+                                "hasMerchantReturnPolicy": {
+                                    "@type": "MerchantReturnPolicy",
+                                    "applicableCountry": "FR",
+                                    "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "item": {
+                            "@type": "Product",
+                            "name": "100 Avis Positifs + 20 offerts",
+                            "description": "Pack de 100 avis Google positifs avec comptes francais, textes personnalises, garantie a vie et service client 24/7.",
+                            "image": "https://avis-market.fr/avis-market-logo.png",
+                            "offers": {
+                                "@type": "Offer",
+                                "price": "279",
+                                "priceCurrency": "EUR",
+                                "availability": "https://schema.org/InStock",
+                                "shippingDetails": {
+                                    "@type": "OfferShippingDetails",
+                                    "shippingRate": {
+                                        "@type": "MonetaryAmount",
+                                        "value": "0",
+                                        "currency": "EUR"
+                                    },
+                                    "deliveryTime": {
+                                        "@type": "ShippingDeliveryTime",
+                                        "handlingTime": {
+                                            "@type": "QuantitativeValue",
+                                            "minValue": 1,
+                                            "maxValue": 2,
+                                            "unitCode": "DAY"
+                                        },
+                                        "transitTime": {
+                                            "@type": "QuantitativeValue",
+                                            "minValue": 50,
+                                            "maxValue": 120,
+                                            "unitCode": "DAY"
+                                        }
+                                    },
+                                    "shippingDestination": {
+                                        "@type": "DefinedRegion",
+                                        "addressCountry": "FR"
+                                    }
+                                },
+                                "hasMerchantReturnPolicy": {
+                                    "@type": "MerchantReturnPolicy",
+                                    "applicableCountry": "FR",
+                                    "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
+                                }
+                            }
                         }
                     }
-                }
-            },
-            {
-                "@type": "ListItem",
-                "position": 3,
-                "item": {
-                    "@type": "Product",
-                    "name": "100 Avis Positifs + 20 offerts",
-                    "description": "Pack de 100 avis Google positifs avec comptes francais, textes personnalises, garantie a vie et service client 24/7.",
-                    "image": "https://avis-market.fr/avis-market-logo.png",
-                    "offers": {
-                        "@type": "Offer",
-                        "price": "239",
-                        "priceCurrency": "EUR",
-                        "availability": "https://schema.org/InStock",
-                        "shippingDetails": {
-                            "@type": "OfferShippingDetails",
-                            "shippingRate": {
-                                "@type": "MonetaryAmount",
-                                "value": "0",
-                                "currency": "EUR"
-                            },
-                            "deliveryTime": {
-                                "@type": "ShippingDeliveryTime",
-                                "handlingTime": {
-                                    "@type": "QuantitativeValue",
-                                    "minValue": 1,
-                                    "maxValue": 2,
-                                    "unitCode": "DAY"
-                                },
-                                "transitTime": {
-                                    "@type": "QuantitativeValue",
-                                    "minValue": 50,
-                                    "maxValue": 120,
-                                    "unitCode": "DAY"
-                                }
-                            },
-                            "shippingDestination": {
-                                "@type": "DefinedRegion",
-                                "addressCountry": "FR"
-                            }
-                        },
-                        "hasMerchantReturnPolicy": {
-                            "@type": "MerchantReturnPolicy",
-                            "applicableCountry": "FR",
-                            "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
-                        }
-                    }
-                }
+                ]
             }
         ]
     }

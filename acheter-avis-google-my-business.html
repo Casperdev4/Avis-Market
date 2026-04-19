@@ -34,197 +34,230 @@
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-            {"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://avis-market.fr/"},
-            {"@type": "ListItem", "position": 2, "name": "Acheter Avis Google My Business", "item": "https://avis-market.fr/acheter-avis-google-my-business.html"}
-        ]
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Avis Market",
-        "url": "https://avis-market.fr",
-        "logo": "https://avis-market.fr/avis-market-logo.png",
-        "hasOfferCatalog": {
-            "@type": "OfferCatalog",
-            "name": "Nos services",
-            "itemListElement": [
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
+        "@graph": [
+            {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Accueil",
+                        "item": "https://avis-market.fr/"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
                         "name": "Acheter Avis Google My Business",
-                        "url": "https://avis-market.fr/acheter-avis-google-my-business.html"
+                        "item": "https://avis-market.fr/acheter-avis-google-my-business.html"
                     }
-                }
-            ]
-        }
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-            {"@type": "Question", "name": "Qu'est-ce que Google My Business ?", "acceptedAnswer": {"@type": "Answer", "text": "Google My Business (désormais Google Business Profile) est la plateforme gratuite de Google qui permet aux entreprises de gérer leur présence en ligne sur Google Search et Google Maps. Les avis clients y jouent un rôle central pour la visibilité locale."}},
-            {"@type": "Question", "name": "Combien d'avis faut-il sur Google My Business ?", "acceptedAnswer": {"@type": "Answer", "text": "Il est recommandé d'avoir au minimum 30 avis pour être crédible. Plus vous avez d'avis récents et positifs, plus votre fiche Google My Business sera mise en avant dans les résultats locaux."}},
-            {"@type": "Question", "name": "Les avis apparaissent-ils directement sur ma fiche GMB ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui, les avis sont publiés directement sur votre fiche Google My Business et apparaissent sur Google Maps ainsi que dans les résultats de recherche Google."}},
-            {"@type": "Question", "name": "Les avis Google My Business influencent-ils le SEO local ?", "acceptedAnswer": {"@type": "Answer", "text": "Absolument. Google utilise la quantité, la qualité et la récence des avis comme facteurs de classement pour le référencement local. Plus vous avez d'avis positifs, mieux votre fiche sera positionnée."}}
-        ]
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "ItemList",
-        "name": "Nos Offres Avis Positifs",
-        "itemListElement": [
+                ]
+            },
             {
-                "@type": "ListItem",
-                "position": 1,
-                "item": {
-                    "@type": "Product",
-                    "name": "25 Avis Positifs + 5 offerts",
-                    "description": "Pack de 25 avis Google positifs avec comptes francais, textes personnalises, garantie a vie et service client 24/7.",
-                    "image": "https://avis-market.fr/avis-market-logo.png",
-                    "offers": {
-                        "@type": "Offer",
-                        "price": "99",
-                        "priceCurrency": "EUR",
-                        "availability": "https://schema.org/InStock",
-                        "shippingDetails": {
-                            "@type": "OfferShippingDetails",
-                            "shippingRate": {
-                                "@type": "MonetaryAmount",
-                                "value": "0",
-                                "currency": "EUR"
-                            },
-                            "deliveryTime": {
-                                "@type": "ShippingDeliveryTime",
-                                "handlingTime": {
-                                    "@type": "QuantitativeValue",
-                                    "minValue": 1,
-                                    "maxValue": 2,
-                                    "unitCode": "DAY"
-                                },
-                                "transitTime": {
-                                    "@type": "QuantitativeValue",
-                                    "minValue": 12,
-                                    "maxValue": 30,
-                                    "unitCode": "DAY"
-                                }
-                            },
-                            "shippingDestination": {
-                                "@type": "DefinedRegion",
-                                "addressCountry": "FR"
+                "@type": "Organization",
+                "name": "Avis Market",
+                "url": "https://avis-market.fr",
+                "logo": "https://avis-market.fr/avis-market-logo.png",
+                "hasOfferCatalog": {
+                    "@type": "OfferCatalog",
+                    "name": "Nos services",
+                    "itemListElement": [
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "acheter avis google my business",
+                                "url": "https://avis-market.fr/acheter-avis-google-my-business.html"
                             }
-                        },
-                        "hasMerchantReturnPolicy": {
-                            "@type": "MerchantReturnPolicy",
-                            "applicableCountry": "FR",
-                            "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
                         }
-                    }
+                    ]
                 }
             },
             {
-                "@type": "ListItem",
-                "position": 2,
-                "item": {
-                    "@type": "Product",
-                    "name": "50 Avis Positifs + 10 offerts",
-                    "description": "Pack de 50 avis Google positifs avec comptes francais, textes personnalises, garantie a vie et service client 24/7.",
-                    "image": "https://avis-market.fr/avis-market-logo.png",
-                    "offers": {
-                        "@type": "Offer",
-                        "price": "169",
-                        "priceCurrency": "EUR",
-                        "availability": "https://schema.org/InStock",
-                        "shippingDetails": {
-                            "@type": "OfferShippingDetails",
-                            "shippingRate": {
-                                "@type": "MonetaryAmount",
-                                "value": "0",
-                                "currency": "EUR"
-                            },
-                            "deliveryTime": {
-                                "@type": "ShippingDeliveryTime",
-                                "handlingTime": {
-                                    "@type": "QuantitativeValue",
-                                    "minValue": 1,
-                                    "maxValue": 2,
-                                    "unitCode": "DAY"
-                                },
-                                "transitTime": {
-                                    "@type": "QuantitativeValue",
-                                    "minValue": 25,
-                                    "maxValue": 60,
-                                    "unitCode": "DAY"
-                                }
-                            },
-                            "shippingDestination": {
-                                "@type": "DefinedRegion",
-                                "addressCountry": "FR"
-                            }
-                        },
-                        "hasMerchantReturnPolicy": {
-                            "@type": "MerchantReturnPolicy",
-                            "applicableCountry": "FR",
-                            "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "Qu'est-ce que Google My Business ?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Google My Business (désormais Google Business Profile) est la plateforme gratuite de Google qui permet aux entreprises de gérer leur présence en ligne sur Google Search et Google Maps. Les avis clients y jouent un rôle central pour la visibilité locale."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Combien d'avis faut-il sur Google My Business ?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Il est recommandé d'avoir au minimum 30 avis pour être crédible. Plus vous avez d'avis récents et positifs, plus votre fiche Google My Business sera mise en avant dans les résultats locaux."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Les avis apparaissent-ils directement sur ma fiche GMB ?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Oui, les avis sont publiés directement sur votre fiche Google My Business et apparaissent sur Google Maps ainsi que dans les résultats de recherche Google."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Les avis Google My Business influencent-ils le SEO local ?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Absolument. Google utilise la quantité, la qualité et la récence des avis comme facteurs de classement pour le référencement local. Plus vous avez d'avis positifs, mieux votre fiche sera positionnée."
                         }
                     }
-                }
+                ]
             },
             {
-                "@type": "ListItem",
-                "position": 3,
-                "item": {
-                    "@type": "Product",
-                    "name": "100 Avis Positifs + 20 offerts",
-                    "description": "Pack de 100 avis Google positifs avec comptes francais, textes personnalises, garantie a vie et service client 24/7.",
-                    "image": "https://avis-market.fr/avis-market-logo.png",
-                    "offers": {
-                        "@type": "Offer",
-                        "price": "239",
-                        "priceCurrency": "EUR",
-                        "availability": "https://schema.org/InStock",
-                        "shippingDetails": {
-                            "@type": "OfferShippingDetails",
-                            "shippingRate": {
-                                "@type": "MonetaryAmount",
-                                "value": "0",
-                                "currency": "EUR"
-                            },
-                            "deliveryTime": {
-                                "@type": "ShippingDeliveryTime",
-                                "handlingTime": {
-                                    "@type": "QuantitativeValue",
-                                    "minValue": 1,
-                                    "maxValue": 2,
-                                    "unitCode": "DAY"
+                "@type": "ItemList",
+                "name": "Nos Offres Avis Positifs",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "item": {
+                            "@type": "Product",
+                            "name": "25 Avis Positifs + 5 offerts",
+                            "description": "Pack de 25 avis Google positifs avec comptes francais, textes personnalises, garantie a vie et service client 24/7.",
+                            "image": "https://avis-market.fr/avis-market-logo.png",
+                            "offers": {
+                                "@type": "Offer",
+                                "price": "99",
+                                "priceCurrency": "EUR",
+                                "availability": "https://schema.org/InStock",
+                                "shippingDetails": {
+                                    "@type": "OfferShippingDetails",
+                                    "shippingRate": {
+                                        "@type": "MonetaryAmount",
+                                        "value": "0",
+                                        "currency": "EUR"
+                                    },
+                                    "deliveryTime": {
+                                        "@type": "ShippingDeliveryTime",
+                                        "handlingTime": {
+                                            "@type": "QuantitativeValue",
+                                            "minValue": 1,
+                                            "maxValue": 2,
+                                            "unitCode": "DAY"
+                                        },
+                                        "transitTime": {
+                                            "@type": "QuantitativeValue",
+                                            "minValue": 12,
+                                            "maxValue": 30,
+                                            "unitCode": "DAY"
+                                        }
+                                    },
+                                    "shippingDestination": {
+                                        "@type": "DefinedRegion",
+                                        "addressCountry": "FR"
+                                    }
                                 },
-                                "transitTime": {
-                                    "@type": "QuantitativeValue",
-                                    "minValue": 50,
-                                    "maxValue": 120,
-                                    "unitCode": "DAY"
+                                "hasMerchantReturnPolicy": {
+                                    "@type": "MerchantReturnPolicy",
+                                    "applicableCountry": "FR",
+                                    "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
                                 }
-                            },
-                            "shippingDestination": {
-                                "@type": "DefinedRegion",
-                                "addressCountry": "FR"
                             }
-                        },
-                        "hasMerchantReturnPolicy": {
-                            "@type": "MerchantReturnPolicy",
-                            "applicableCountry": "FR",
-                            "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
+                        }
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "item": {
+                            "@type": "Product",
+                            "name": "50 Avis Positifs + 10 offerts",
+                            "description": "Pack de 50 avis Google positifs avec comptes francais, textes personnalises, garantie a vie et service client 24/7.",
+                            "image": "https://avis-market.fr/avis-market-logo.png",
+                            "offers": {
+                                "@type": "Offer",
+                                "price": "169",
+                                "priceCurrency": "EUR",
+                                "availability": "https://schema.org/InStock",
+                                "shippingDetails": {
+                                    "@type": "OfferShippingDetails",
+                                    "shippingRate": {
+                                        "@type": "MonetaryAmount",
+                                        "value": "0",
+                                        "currency": "EUR"
+                                    },
+                                    "deliveryTime": {
+                                        "@type": "ShippingDeliveryTime",
+                                        "handlingTime": {
+                                            "@type": "QuantitativeValue",
+                                            "minValue": 1,
+                                            "maxValue": 2,
+                                            "unitCode": "DAY"
+                                        },
+                                        "transitTime": {
+                                            "@type": "QuantitativeValue",
+                                            "minValue": 25,
+                                            "maxValue": 60,
+                                            "unitCode": "DAY"
+                                        }
+                                    },
+                                    "shippingDestination": {
+                                        "@type": "DefinedRegion",
+                                        "addressCountry": "FR"
+                                    }
+                                },
+                                "hasMerchantReturnPolicy": {
+                                    "@type": "MerchantReturnPolicy",
+                                    "applicableCountry": "FR",
+                                    "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "item": {
+                            "@type": "Product",
+                            "name": "100 Avis Positifs + 20 offerts",
+                            "description": "Pack de 100 avis Google positifs avec comptes francais, textes personnalises, garantie a vie et service client 24/7.",
+                            "image": "https://avis-market.fr/avis-market-logo.png",
+                            "offers": {
+                                "@type": "Offer",
+                                "price": "279",
+                                "priceCurrency": "EUR",
+                                "availability": "https://schema.org/InStock",
+                                "shippingDetails": {
+                                    "@type": "OfferShippingDetails",
+                                    "shippingRate": {
+                                        "@type": "MonetaryAmount",
+                                        "value": "0",
+                                        "currency": "EUR"
+                                    },
+                                    "deliveryTime": {
+                                        "@type": "ShippingDeliveryTime",
+                                        "handlingTime": {
+                                            "@type": "QuantitativeValue",
+                                            "minValue": 1,
+                                            "maxValue": 2,
+                                            "unitCode": "DAY"
+                                        },
+                                        "transitTime": {
+                                            "@type": "QuantitativeValue",
+                                            "minValue": 50,
+                                            "maxValue": 120,
+                                            "unitCode": "DAY"
+                                        }
+                                    },
+                                    "shippingDestination": {
+                                        "@type": "DefinedRegion",
+                                        "addressCountry": "FR"
+                                    }
+                                },
+                                "hasMerchantReturnPolicy": {
+                                    "@type": "MerchantReturnPolicy",
+                                    "applicableCountry": "FR",
+                                    "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
+                                }
+                            }
                         }
                     }
-                }
+                ]
             }
         ]
     }

@@ -37,235 +37,230 @@
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
+        "@graph": [
             {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Accueil",
-                "item": "https://avis-market.fr/"
-            },
-            {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Acheter Avis Google 5 Etoiles",
-                "item": "https://avis-market.fr/acheter-avis-google-5-etoiles.html"
-            }
-        ]
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Avis Market",
-        "url": "https://avis-market.fr",
-        "logo": "https://avis-market.fr/avis-market-logo.png",
-        "hasOfferCatalog": {
-            "@type": "OfferCatalog",
-            "name": "Nos services",
-            "itemListElement": [
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Accueil",
+                        "item": "https://avis-market.fr/"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
                         "name": "Acheter Avis Google 5 Etoiles",
-                        "url": "https://avis-market.fr/acheter-avis-google-5-etoiles.html"
+                        "item": "https://avis-market.fr/acheter-avis-google-5-etoiles.html"
                     }
-                }
-            ]
-        }
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "Les avis achetés sont-ils tous notés 5 étoiles ?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Oui, tous nos avis sont notés 5 étoiles par défaut. Si vous souhaitez un mix plus naturel avec quelques avis 4 étoiles, nous pouvons adapter la livraison selon vos préférences."
-                }
+                ]
             },
             {
-                "@type": "Question",
-                "name": "Combien d'avis 5 étoiles faut-il pour atteindre une note de 4,5 ?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Cela dépend de votre note actuelle et du nombre d'avis existants. Contactez-nous via WhatsApp après votre commande et nous calculerons ensemble le nombre exact d'avis nécessaires."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Une note 5 étoiles est-elle crédible pour les internautes ?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Une note entre 4,5 et 4,9 étoiles est perçue comme la plus crédible. Nous pouvons inclure quelques avis 4 étoiles pour un rendu encore plus naturel si votre note est déjà élevée."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "En combien de temps ma note Google va-t-elle augmenter ?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Les premiers avis 5 étoiles sont publiés sous 24 à 48h. Avec un rythme de 1 à 2 avis par jour, vous verrez votre note progresser de manière régulière et naturelle au fil des semaines."
-                }
-            }
-        ]
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "ItemList",
-        "name": "Nos Offres Avis Positifs",
-        "itemListElement": [
-            {
-                "@type": "ListItem",
-                "position": 1,
-                "item": {
-                    "@type": "Product",
-                    "name": "25 Avis Positifs + 5 offerts",
-                    "description": "Pack de 25 avis Google positifs avec comptes francais, textes personnalises, garantie a vie et service client 24/7.",
-                    "image": "https://avis-market.fr/avis-market-logo.png",
-                    "offers": {
-                        "@type": "Offer",
-                        "price": "99",
-                        "priceCurrency": "EUR",
-                        "availability": "https://schema.org/InStock",
-                        "shippingDetails": {
-                            "@type": "OfferShippingDetails",
-                            "shippingRate": {
-                                "@type": "MonetaryAmount",
-                                "value": "0",
-                                "currency": "EUR"
-                            },
-                            "deliveryTime": {
-                                "@type": "ShippingDeliveryTime",
-                                "handlingTime": {
-                                    "@type": "QuantitativeValue",
-                                    "minValue": 1,
-                                    "maxValue": 2,
-                                    "unitCode": "DAY"
-                                },
-                                "transitTime": {
-                                    "@type": "QuantitativeValue",
-                                    "minValue": 12,
-                                    "maxValue": 30,
-                                    "unitCode": "DAY"
-                                }
-                            },
-                            "shippingDestination": {
-                                "@type": "DefinedRegion",
-                                "addressCountry": "FR"
+                "@type": "Organization",
+                "name": "Avis Market",
+                "url": "https://avis-market.fr",
+                "logo": "https://avis-market.fr/avis-market-logo.png",
+                "hasOfferCatalog": {
+                    "@type": "OfferCatalog",
+                    "name": "Nos services",
+                    "itemListElement": [
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "acheter avis google 5 etoiles",
+                                "url": "https://avis-market.fr/acheter-avis-google-5-etoiles.html"
                             }
-                        },
-                        "hasMerchantReturnPolicy": {
-                            "@type": "MerchantReturnPolicy",
-                            "applicableCountry": "FR",
-                            "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
+                        }
+                    ]
+                }
+            },
+            {
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "Les avis achetés sont-ils tous notés 5 étoiles ?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Oui, tous nos avis sont notés 5 étoiles par défaut. Si vous souhaitez un mix plus naturel avec quelques avis 4 étoiles, nous pouvons adapter la livraison selon vos préférences."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Combien d'avis 5 étoiles faut-il pour atteindre une note de 4,5 ?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Cela dépend de votre note actuelle et du nombre d'avis existants. Contactez-nous via WhatsApp après votre commande et nous calculerons ensemble le nombre exact d'avis nécessaires."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Une note 5 étoiles est-elle crédible pour les internautes ?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Une note entre 4,5 et 4,9 étoiles est perçue comme la plus crédible. Nous pouvons inclure quelques avis 4 étoiles pour un rendu encore plus naturel si votre note est déjà élevée."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "En combien de temps ma note Google va-t-elle augmenter ?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Les premiers avis 5 étoiles sont publiés sous 24 à 48h. Avec un rythme de 1 à 2 avis par jour, vous verrez votre note progresser de manière régulière et naturelle au fil des semaines."
                         }
                     }
-                }
+                ]
             },
             {
-                "@type": "ListItem",
-                "position": 2,
-                "item": {
-                    "@type": "Product",
-                    "name": "50 Avis Positifs + 10 offerts",
-                    "description": "Pack de 50 avis Google positifs avec comptes francais, textes personnalises, garantie a vie et service client 24/7.",
-                    "image": "https://avis-market.fr/avis-market-logo.png",
-                    "offers": {
-                        "@type": "Offer",
-                        "price": "169",
-                        "priceCurrency": "EUR",
-                        "availability": "https://schema.org/InStock",
-                        "shippingDetails": {
-                            "@type": "OfferShippingDetails",
-                            "shippingRate": {
-                                "@type": "MonetaryAmount",
-                                "value": "0",
-                                "currency": "EUR"
-                            },
-                            "deliveryTime": {
-                                "@type": "ShippingDeliveryTime",
-                                "handlingTime": {
-                                    "@type": "QuantitativeValue",
-                                    "minValue": 1,
-                                    "maxValue": 2,
-                                    "unitCode": "DAY"
+                "@type": "ItemList",
+                "name": "Nos Offres Avis Positifs",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "item": {
+                            "@type": "Product",
+                            "name": "25 Avis Positifs + 5 offerts",
+                            "description": "Pack de 25 avis Google positifs avec comptes francais, textes personnalises, garantie a vie et service client 24/7.",
+                            "image": "https://avis-market.fr/avis-market-logo.png",
+                            "offers": {
+                                "@type": "Offer",
+                                "price": "99",
+                                "priceCurrency": "EUR",
+                                "availability": "https://schema.org/InStock",
+                                "shippingDetails": {
+                                    "@type": "OfferShippingDetails",
+                                    "shippingRate": {
+                                        "@type": "MonetaryAmount",
+                                        "value": "0",
+                                        "currency": "EUR"
+                                    },
+                                    "deliveryTime": {
+                                        "@type": "ShippingDeliveryTime",
+                                        "handlingTime": {
+                                            "@type": "QuantitativeValue",
+                                            "minValue": 1,
+                                            "maxValue": 2,
+                                            "unitCode": "DAY"
+                                        },
+                                        "transitTime": {
+                                            "@type": "QuantitativeValue",
+                                            "minValue": 12,
+                                            "maxValue": 30,
+                                            "unitCode": "DAY"
+                                        }
+                                    },
+                                    "shippingDestination": {
+                                        "@type": "DefinedRegion",
+                                        "addressCountry": "FR"
+                                    }
                                 },
-                                "transitTime": {
-                                    "@type": "QuantitativeValue",
-                                    "minValue": 25,
-                                    "maxValue": 60,
-                                    "unitCode": "DAY"
+                                "hasMerchantReturnPolicy": {
+                                    "@type": "MerchantReturnPolicy",
+                                    "applicableCountry": "FR",
+                                    "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
                                 }
-                            },
-                            "shippingDestination": {
-                                "@type": "DefinedRegion",
-                                "addressCountry": "FR"
                             }
-                        },
-                        "hasMerchantReturnPolicy": {
-                            "@type": "MerchantReturnPolicy",
-                            "applicableCountry": "FR",
-                            "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
+                        }
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "item": {
+                            "@type": "Product",
+                            "name": "50 Avis Positifs + 10 offerts",
+                            "description": "Pack de 50 avis Google positifs avec comptes francais, textes personnalises, garantie a vie et service client 24/7.",
+                            "image": "https://avis-market.fr/avis-market-logo.png",
+                            "offers": {
+                                "@type": "Offer",
+                                "price": "169",
+                                "priceCurrency": "EUR",
+                                "availability": "https://schema.org/InStock",
+                                "shippingDetails": {
+                                    "@type": "OfferShippingDetails",
+                                    "shippingRate": {
+                                        "@type": "MonetaryAmount",
+                                        "value": "0",
+                                        "currency": "EUR"
+                                    },
+                                    "deliveryTime": {
+                                        "@type": "ShippingDeliveryTime",
+                                        "handlingTime": {
+                                            "@type": "QuantitativeValue",
+                                            "minValue": 1,
+                                            "maxValue": 2,
+                                            "unitCode": "DAY"
+                                        },
+                                        "transitTime": {
+                                            "@type": "QuantitativeValue",
+                                            "minValue": 25,
+                                            "maxValue": 60,
+                                            "unitCode": "DAY"
+                                        }
+                                    },
+                                    "shippingDestination": {
+                                        "@type": "DefinedRegion",
+                                        "addressCountry": "FR"
+                                    }
+                                },
+                                "hasMerchantReturnPolicy": {
+                                    "@type": "MerchantReturnPolicy",
+                                    "applicableCountry": "FR",
+                                    "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "item": {
+                            "@type": "Product",
+                            "name": "100 Avis Positifs + 20 offerts",
+                            "description": "Pack de 100 avis Google positifs avec comptes francais, textes personnalises, garantie a vie et service client 24/7.",
+                            "image": "https://avis-market.fr/avis-market-logo.png",
+                            "offers": {
+                                "@type": "Offer",
+                                "price": "279",
+                                "priceCurrency": "EUR",
+                                "availability": "https://schema.org/InStock",
+                                "shippingDetails": {
+                                    "@type": "OfferShippingDetails",
+                                    "shippingRate": {
+                                        "@type": "MonetaryAmount",
+                                        "value": "0",
+                                        "currency": "EUR"
+                                    },
+                                    "deliveryTime": {
+                                        "@type": "ShippingDeliveryTime",
+                                        "handlingTime": {
+                                            "@type": "QuantitativeValue",
+                                            "minValue": 1,
+                                            "maxValue": 2,
+                                            "unitCode": "DAY"
+                                        },
+                                        "transitTime": {
+                                            "@type": "QuantitativeValue",
+                                            "minValue": 50,
+                                            "maxValue": 120,
+                                            "unitCode": "DAY"
+                                        }
+                                    },
+                                    "shippingDestination": {
+                                        "@type": "DefinedRegion",
+                                        "addressCountry": "FR"
+                                    }
+                                },
+                                "hasMerchantReturnPolicy": {
+                                    "@type": "MerchantReturnPolicy",
+                                    "applicableCountry": "FR",
+                                    "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
+                                }
+                            }
                         }
                     }
-                }
-            },
-            {
-                "@type": "ListItem",
-                "position": 3,
-                "item": {
-                    "@type": "Product",
-                    "name": "100 Avis Positifs + 20 offerts",
-                    "description": "Pack de 100 avis Google positifs avec comptes francais, textes personnalises, garantie a vie et service client 24/7.",
-                    "image": "https://avis-market.fr/avis-market-logo.png",
-                    "offers": {
-                        "@type": "Offer",
-                        "price": "239",
-                        "priceCurrency": "EUR",
-                        "availability": "https://schema.org/InStock",
-                        "shippingDetails": {
-                            "@type": "OfferShippingDetails",
-                            "shippingRate": {
-                                "@type": "MonetaryAmount",
-                                "value": "0",
-                                "currency": "EUR"
-                            },
-                            "deliveryTime": {
-                                "@type": "ShippingDeliveryTime",
-                                "handlingTime": {
-                                    "@type": "QuantitativeValue",
-                                    "minValue": 1,
-                                    "maxValue": 2,
-                                    "unitCode": "DAY"
-                                },
-                                "transitTime": {
-                                    "@type": "QuantitativeValue",
-                                    "minValue": 50,
-                                    "maxValue": 120,
-                                    "unitCode": "DAY"
-                                }
-                            },
-                            "shippingDestination": {
-                                "@type": "DefinedRegion",
-                                "addressCountry": "FR"
-                            }
-                        },
-                        "hasMerchantReturnPolicy": {
-                            "@type": "MerchantReturnPolicy",
-                            "applicableCountry": "FR",
-                            "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
-                        }
-                    }
-                }
+                ]
             }
         ]
     }
