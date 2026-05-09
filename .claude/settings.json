@@ -1,0 +1,45 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node _merge_jsonld.js)",
+      "Bash(node -e ' *)",
+      "Bash(node _audit_products.js)",
+      "Bash(node _fix_prices.js)",
+      "Bash(node _audit_all_sites.js)",
+      "Bash(node _fix_site.js \"achat-avis.ch\")",
+      "Bash(node _fix_site.js \"acheter-avis.ca\")",
+      "Bash(node _fix_site.js \"acheter-avis.com_BE\")",
+      "Bash(node _fix_site.js \"acheter-avis.fr\")",
+      "Bash(node _fix_site.js \"acquistare-recensioni.com\")",
+      "Bash(node _fix_site.js \"avis-markt.com_DE\")",
+      "Bash(node _fix_site.js \"avis-pas-cher.com\")",
+      "Bash(node _fix_site.js \"comprar-avaliacao.com\")",
+      "Bash(node _fix_site.js \"incelemelerini-satin-al.com\")",
+      "Bash(node _fix_site.js \"kaufen-sie-goo-bewertungen.com\")",
+      "Bash(rm -f _fix_site.js _audit_all_sites.js)",
+      "Bash(ls _*.js)",
+      "Bash(node _audit_other.js)",
+      "Bash(node _fix_site.js \"Autre_5/avis-trustpilot.com\")",
+      "Bash(node _fix_site.js \"Autre_5/avis-tripadvisor.com\")",
+      "Bash(node _fix_site.js \"Autre_5/trip-yorumlarini-satin-al.com__\")",
+      "Bash(node _fix_site.js \"Autre_5/acheter-abonnes-insta.com\")",
+      "Bash(node _fix_site.js \"Autre_5/instaaboost.fr\")",
+      "Bash(node _fix_site.js \"Autre_5/achat-abonnes-tktk.com\")",
+      "Bash(git stash *)",
+      "Bash(node _fix_site.js \"YouTube_8/youlikes.fr\")",
+      "Bash(node _fix_site.js \"YouTube_8/abonnees-kopen.com\")",
+      "Bash(node _fix_site.js \"YouTube_8/abonnenten-kaufen.com\")",
+      "Bash(node _fix_site.js \"YouTube_8/achat-abonne.ca\")",
+      "Bash(node _fix_site.js \"YouTube_8/buy-subscribers.uk\")",
+      "Bash(node _fix_site.js \"YouTube_8/comprare-iscritti.com\")",
+      "Bash(node _fix_site.js \"YouTube_8/cumpara-abonati.com\")",
+      "Bash(node _fix_site.js \"YouTube_8/kopa-prenumeranter.com\")",
+      "Bash(rm -f _fix_site.js _audit_other.js)",
+      "Bash(node _verify_all.js)"
+    ],
+    "additionalDirectories": [
+      "c:\\Users\\Webpr\\Desktop\\E-Commerce_\\Google_15",
+      "c:\\Users\\Webpr\\Desktop\\E-Commerce_"
+    ]
+  }
+}
